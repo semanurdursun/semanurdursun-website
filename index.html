@@ -3,52 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semanur Dursun | Ana Sayfa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Semanur Dursun | Education Portal</title>
+    <meta name="description" content="Semanur Dursun Education Website - Homework Project">
+    <meta name="keywords" content="Education, CV, Timeline, Statistics, News">
+    
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e67e22;
+            --accent: #3498db;
+            --light: #ecf0f1;
+        }
+
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--light); }
+
+        /* HEADER & NAV (DIV STRUCTURE) */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            background: var(--primary); padding: 15px 5%; color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .logo { font-size: 28px; font-weight: 800; letter-spacing: 2px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+
+        .container { width: 90%; margin: 20px auto; }
+
+        /* LANGUAGE & STATS (STATISTICAL ENGINE) */
+        .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .stats-engine { display: flex; gap: 30px; background: white; padding: 20px; border-radius: 10px; border-bottom: 4px solid var(--accent); }
+        .stat-box { text-align: center; }
+        .stat-val { display: block; font-size: 24px; font-weight: bold; color: var(--accent); }
+
+        /* NEWS PUBLICATION */
+        .news-section { background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .lang-btn { background: var(--secondary); border: none; color: white; padding: 8px 15px; cursor: pointer; border-radius: 5px; }
+
+        /* TIMELINE & SCHEDULE TABLE */
+        .schedule-container { overflow-x: auto; background: white; padding: 20px; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: var(--primary); color: white; padding: 15px; text-align: left; border: 1px solid #ddd; }
+        td { padding: 12px; border: 1px solid #ddd; }
+        tr:nth-child(even) { background-color: #f9f9f9; } /* Horizontal Coloring */
+        tr:hover { background-color: #f1f1f1; } 
+        .art-sport { color: var(--secondary); font-weight: bold; }
+
+        /* FORM & IFRAME (DIV FLEX) */
+        .contact-grid { display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
+        .form-wrapper { flex: 2; background: white; padding: 25px; border-radius: 8px; min-width: 350px; }
+        .iframe-wrapper { flex: 1; min-width: 300px; height: 400px; }
+        iframe { width: 100%; height: 100%; border: none; border-radius: 8px; }
+
+        input, select, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .checkbox-group { margin: 15px 0; padding: 10px; border: 1px dashed #ccc; }
+        
+        .submit-btn { background: var(--primary); color: white; border: none; padding: 15px; cursor: pointer; width: 100%; font-size: 16px; border-radius: 4px; transition: 0.4s; }
+        .submit-btn:hover { background: var(--secondary); }
+
+        footer { text-align: center; padding: 30px; background: var(--primary); color: white; margin-top: 50px; }
+    </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo"><strong>SD LOGO</strong></div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="#cv">CV</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="contact.html">Contact</a>
+<div class="navbar">
+    <div class="logo">SD PORTAL</div>
+    <div class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#cv">CV</a>
+        <a href="#schedule">SCHEDULE</a>
+        <button class="lang-btn" onclick="switchLang()">TR / EN</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="top-bar">
+        <div class="stats-engine">
+            <div class="stat-box"><span class="stat-val">850</span><span>Students</span></div>
+            <div class="stat-box"><span class="stat-val">42</span><span>Courses</span></div>
+            <div class="stat-box"><span class="stat-val">12</span><span>Events</span></div>
         </div>
-        <div class="lang-switch">
-            <span>TR / EN</span>
-        </div>
-    </nav>
-
-    <div class="container">
-        <header>
-            <h1>Hoş Geldiniz</h1>
-            <p>Bu web sitesinde tüm format bazlı yeteneklerimizi konuşturacağız.</p>
-        </header>
-
-        <section id="cv">
-            <h2>Özgeçmiş (CV)</h2>
-            <div class="skill-box" style="border: 1px solid #ccc; padding: 15px; margin-top: 10px;">
-                <h3>Eğitim Bilgileri</h3>
-                <p>Üniversite 2. Sınıf Öğrencisi</p>
-                
-                <h3>Yetenekler</h3>
-                <ul>
-                    <li>HTML5 & CSS3 Div Yapısı</li>
-                    <li>Responsive Tasarım</li>
-                    <li>JavaScript Entegrasyonu</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="news" style="margin-top: 30px;">
-            <h2>News Publication</h2>
-            <div class="news-item" style="background: #eee; padding: 10px;">
-                <p>Web sayfası İngilizce ve Türkçe dil seçenekleri ile kurgulanmıştır.</p>
-            </div>
-        </section>
     </div>
 
-</body>
-</html>
+    <div class="news-section" id="news-box">
+        <div id="tr-news">
+            <h2>Haber Yayınları</h2>
+            <p>Eğitim platformumuza hoş geldiniz. Yeni sanat ve spor kurslarımız kayıt aşamasındadır.</p>
+        </div>
+        <div id="en-news" style="display:none;">
+            <h2>News Publications</h2>
+            <p>Welcome to our education platform. New art and sports courses are in the registration phase.</p>
+        </div>
+    </div>
+
+    <div class="schedule-container" id="schedule">
+        <h2>Timeline & Weekly Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Morning (09:00 - 12:00)</th>
+                    <th>Afternoon (13:00 - 16:00)</th>
+                    <th>Activity Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Web Development</td>
+                    <td>Database Systems</td>
+                    <td>Academic</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Digital Painting</td>
+                    <td>Music Theory</td>
+                    <td class="art-sport">Artistic</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Tennis Practice</td>
+                    <td>Yoga Session</td>
+                    <td class="art-sport">Sports</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Algorithm Analysis</td>
+                    <td>Project Management</td>
+                    <td>Academic</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="contact-grid">
+        <div class="form-wrapper">
+            <h3>Contact & Registration Form</h3>
+            <form id="mainForm">
+                <input type="text" id="username" placeholder="Full Name" required>
+                <input type="email" id="usermail" placeholder="Email Address" required>
+                
+                <div class="checkbox-group">
+                    <p>Interests:</p>
+                    <label><input type="checkbox" name="interest" value="Coding"> Coding</label><br>
+                    <label><input type="checkbox" name="interest" value="Basketball"> Basketball</label><br>
+                    <label><input type="checkbox" name="interest" value="Music"> Music</label>
+                </div>
+
+                <div style="background: #fff3cd; padding: 10px; margin-bottom: 10px;">
+                    <label>Spam Protection: 5 + 5 = ?</label>
+                    <input type="number" id="spamAnswer" required>
+                </div>
+
+                <button type="button" class="submit-btn" onclick="processForm()">SUBMIT DATA</button>
+            </form>
+        </div>
+
+        <div class="iframe-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Education Video"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Semanur Dursun | Developed for Web Design Course</p
