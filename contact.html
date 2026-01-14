@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav>
+        <div class="logo"><strong>SD LOGO</strong></div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="lang-switch">TR / EN</div>
+    </nav>
+
+    <div class="container">
+        <h2>İletişim Formu / Contact Form</h2>
+        
+        <div class="form-wrapper">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Adınız / Name" required>
+                <input type="email" id="email" placeholder="E-posta / Email" required>
+                
+                <label>
+                    <input type="checkbox" id="kvkk" required> 
+                    Verilerimin toplanmasını onaylıyorum. (Data collection consent)
+                </label>
+
+                <div class="spam-protection" style="margin: 10px 0; padding: 10px; border: 1px dashed #ccc;">
+                    <label>Spam Koruması: 5 + 3 kaçtır?</label>
+                    <input type="number" id="spamCheck" placeholder="Cevap" required>
+                </div>
+
+                <button type="submit">Gönder / Submit</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <h3>Konum / Location (Iframe)</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.7932762312!2d28.805037703893693!3d41.00537021350711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1cc1e01f57f67c5!2zSXPZdGFuYnVs!5e0!3m2!1str!2str!4v1705250000000!5m2!1str!2str" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const spamAnswer = document.getElementById('spamCheck').value;
+            if(spamAnswer != "8") {
+                alert("Spam koruması hatalı! Lütfen tekrar deneyin.");
+                return;
+            }
+
+            const name = document.getElementById('name').value;
+            alert("Sayın " + name + ", mesajınız başarıyla hazırlandı. (Mail simülasyonu çalışıyor...)");
+            
+            // Mail atma simülasyonu (mailto)
+            window.location.href = "mailto:sizinmailiniz@example.com?subject=Yeni Form Mesajı&body=İsim: " + name;
+        });
+    </script>
+
+</body>
+</html>
