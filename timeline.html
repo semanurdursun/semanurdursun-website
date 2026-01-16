@@ -7,15 +7,14 @@
 </head>
 <body>
 
-<header
-  <div class="lang">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('tr')">TR</button>
-  class="header">
-</div>
+<header class="header">
   <div class="brand">
     <img src="logo.png" class="logo">
     <span class="brand-name">NOREY</span>
+  </div>
+  <div class="lang">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('tr')">TR</button>
   </div>
   <nav>
     <a href="index.html">Home</a>
@@ -25,20 +24,30 @@
   </nav>
 </header>
 
-<table class="timeline">
+<table class="schedule">
 <tr><th>Day</th><th>Course</th><th>Time</th></tr>
-<tr><td>Monday</td><td>Management and Organization</td><td>12:00 – 15:00</td></tr>
-<tr><td>Tuesday</td><td>Data Structure</td><td>09:00 – 12:00</td></tr>
-<tr><td>Tuesday</td><td>MIS</td><td>12:00 – 15:00</td></tr>
-<tr><td>Tuesday</td><td>Marketing Management</td><td>15:00 – 18:00</td></tr>
-<tr><td>Wednesday</td><td>Business Process Analysis</td><td>12:00 – 15:00</td></tr>
-<tr><td>Thursday</td><td>Web Design</td><td>09:00 – 12:00</td></tr>
+<tr><td>Monday</td><td>Management and Organization</td><td>12:00–15:00</td></tr>
+<tr><td>Tuesday</td><td>Data Structure</td><td>09:00–12:00</td></tr>
+<tr><td>Tuesday</td><td>MIS</td><td>12:00–15:00</td></tr>
+<tr><td>Tuesday</td><td>Marketing Management</td><td>15:00–18:00</td></tr>
+<tr><td>Wednesday</td><td>Business Process Analysis</td><td>12:00–15:00</td></tr>
+<tr><td>Thursday</td><td>Web Design</td><td>09:00–12:00</td></tr>
 </table>
 
 <footer class="fixed-footer">
 📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
 <br>© 2026 Sema Nur Dursun — MIS Student Project
 </footer>
+
+<script>
+function setLang(lang){
+  localStorage.setItem("siteLang", lang);
+  document.querySelectorAll("[data-en]").forEach(e=>e.innerText=e.dataset[lang]);
+}
+document.addEventListener("DOMContentLoaded",()=>{
+  setLang(localStorage.getItem("siteLang")||"en");
+});
+</script>
 
 </body>
 </html>
