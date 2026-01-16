@@ -73,13 +73,21 @@ h1, h2, h3 { color: #2ECC71; } /* Green */
   gap: 10px;
 }
 
-.snd {
+.brand-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
 }
 
-.snd-logo {
-  height: 28px;   /* 🔴 burayı istersen küçült/büyüt */
+.brand-logo {
+  height: 36px;
   width: auto;
+}
+
+.brand-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #E67E22;
 }
