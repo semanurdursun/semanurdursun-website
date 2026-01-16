@@ -1,93 +1,91 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f8;
+  color: #1f3d2b;
 }
 
-nav {
-    background: #FFC0CB; /* Pink */
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 25px;
-    border: 4px solid #E67E22; /* Orange */
-    border-radius: 12px;
-}
-
-h1, h2, h3 { color: #2ECC71; } /* Green */
-
-.timeline-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.timeline-table td, .timeline-table th {
-    border: 2px solid #FFC0CB;
-    padding: 12px;
-    text-align: left;
-}
-
-.tag {
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: white;
-    font-size: 0.85em;
-}
-
-.pink-bg { background-color: #FFC0CB; color: #333; }
-.green-bg { background-color: #2ECC71; }
-.orange-bg { background-color: #E67E22; }
-
-.btn-submit {
-    background-color: #2ECC71;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.navbar {
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding: 10px 20px;
-  background-color: #ffffff;
+  padding: 20px 40px;
+  background: #ffe4ec;
+  border-bottom: 4px solid #c0392b;
 }
 
-.brand {
+.logo-area {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.brand-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin: 40px 0;
+.logo {
+  height: 32px;
 }
 
-.brand-logo {
-  height: 36px;
-  width: auto;
-}
-
-.brand-name {
-  font-size: 32px;
+.name {
+  font-size: 24px;
   font-weight: bold;
-  color: #E67E22;
+  color: #c0392b;
+}
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1f3d2b;
+}
+
+.content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.box {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid #c0392b;
+  margin: 6px;
+}
+
+.cv-section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #ffeef4;
+  border-left: 6px solid #c0392b;
+}
+
+.skill {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  border: 2px solid #c0392b;
+}
+
+.timeline {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timeline th,
+.timeline td {
+  border: 1px solid #c0392b;
+  padding: 10px;
+}
+
+.tag {
+  color: white;
+  text-align: center;
+}
+
+.tech { background: #1f3d2b; }
+.art { background: #c0392b; }
+.sport { background: #d35400; }
+
+iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border: 0;
 }
