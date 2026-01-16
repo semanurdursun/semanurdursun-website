@@ -1,48 +1,63 @@
-<div class="container">
-    <h2>Academic & Project Timeline</h2>
-    <table class="timeline-table">
-        <thead>
-            <tr>
-                <th>Period</th>
-                <th>Activity</th>
-                <th>Type</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="academic">
-                <td>2024 - Present</td>
-                <td>Web Design & Programming (2nd Year)</td>
-                <td><span class="tag blue">Education</span></td>
-            </tr>
-            <tr class="project">
-                <td>Jan 2026</td>
-                <td>Uçuş Saati Projesi - Finance Lead</td>
-                <td><span class="tag green">Work</span></td>
-            </tr>
-            <tr class="sport">
-                <td>Weekly</td>
-                <td>Tennis / Swimming</td>
-                <td><span class="tag orange">Activity</span></td>
-            </tr>
-        </tbody>
-    </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <div class="stats-box">
-        <h3>Project Statistics</h3>
-        <p>Total Project Hours: <span id="hourCounter">0</span></p>
+    <div class="container">
+        <h2>Schedules & Activities</h2>
+        <table class="timeline-table">
+            <thead>
+                <tr class="pink-bg">
+                    <th>Year/Period</th>
+                    <th>Activity</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023 - 2027</td>
+                    [cite_start]<td>B.Sc. in Management Information Systems [cite: 14, 15]</td>
+                    <td><span class="tag green-bg">Education</span></td>
+                </tr>
+                <tr>
+                    <td>Oct 2025 - Pres.</td>
+                    [cite_start]<td>Finance Team Lead - Flight Hour Project [cite: 32]</td>
+                    <td><span class="tag orange-bg">Leadership</span></td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>Artistic & Sports Activities</td>
+                    <td><span class="tag pink-bg">Personal</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 30px; text-align: center; border: 1px dashed #2ECC71; padding: 15px;">
+            <h3>Statistical Engine</h3>
+            <p>Live Projects Tracked: <span id="counter" style="font-weight: bold; color: #E67E22;">0</span></p>
+        </div>
     </div>
-</div>
 
-<script>
-    // Simple Statistical Engine Logic
-    let count = 0;
-    const target = 150; // Example stat
-    const counter = setInterval(() => {
-        if(count < target) {
-            count++;
-            document.getElementById('hourCounter').innerText = count;
-        } else {
-            clearInterval(counter);
+    <script>
+        let count = 0;
+        const speed = 20;
+        function updateCounter() {
+            if(count < 42) {
+                count++;
+                document.getElementById('counter').innerText = count;
+                setTimeout(updateCounter, speed);
+            }
         }
-    }, 20);
-</script>
+        updateCounter();
+    </script>
+</body>
+</html>
