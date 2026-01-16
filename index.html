@@ -8,11 +8,6 @@
 <body>
 
 <header class="header">
-  <div class="lang">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('tr')">TR</button>
-</div>
-
   <div class="brand">
     <img src="logo.png" class="logo">
     <span class="brand-name">NOREY</span>
@@ -31,17 +26,20 @@
   </nav>
 </header>
 
-<main class="container">
-  <h1 data-en="Hello, I'm Sema Nur Dursun"
-      data-tr="Merhaba, ben Sema Nur Dursun">
-      Hello, I'm Sema Nur Dursun
-  </h1>
+<section class="hero">
+  <h1 data-en="Sema Nur Dursun"
+      data-tr="Sema Nur Dursun">Sema Nur Dursun</h1>
 
-  <p data-en="I am a second-year Management Information Systems student interested in web technologies, SEO, and digital systems."
-     data-tr="Web teknolojileri, SEO ve dijital sistemlerle ilgilenen ikinci sınıf Yönetim Bilişim Sistemleri öğrencisiyim.">
-     I am a second-year Management Information Systems student interested in web technologies, SEO, and digital systems.
+  <h2 data-en="Management Information Systems Student"
+      data-tr="Yönetim Bilişim Sistemleri Öğrencisi">
+      Management Information Systems Student
+  </h2>
+
+  <p data-en="Second-year MIS student interested in web technologies, SEO, and digital systems."
+     data-tr="Web teknolojileri, SEO ve dijital sistemlerle ilgilenen ikinci sınıf YBS öğrencisi.">
+     Second-year MIS student interested in web technologies, SEO, and digital systems.
   </p>
-</main>
+</section>
 
 <footer class="fixed-footer">
 📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
@@ -50,10 +48,12 @@
 
 <script>
 function setLang(lang){
-  document.querySelectorAll("[data-en]").forEach(el=>{
-    el.innerText = el.dataset[lang];
-  });
+  localStorage.setItem("siteLang", lang);
+  document.querySelectorAll("[data-en]").forEach(e=>e.innerText=e.dataset[lang]);
 }
+document.addEventListener("DOMContentLoaded",()=>{
+  setLang(localStorage.getItem("siteLang")||"en");
+});
 </script>
 
 </body>
