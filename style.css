@@ -1,134 +1,31 @@
-/* Genel Stil Ayarları */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Üst Menü Tasarımı */
-nav {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #3498db;
-}
-
-/* Div Yapısı Kaplayıcı (Container) */
-.container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-/* Timeline Tasarımı */
-.timeline {
-    border-left: 4px solid #3498db;
-    padding-left: 20px;
-    margin: 20px 0;
-}
-
-.time-item {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.time-item::before {
-    content: '';
-    position: absolute;
-    left: -28px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background: #3498db;
-    border-radius: 50%;
-}
-
-/* Tablo ve Yatay Renklendirme (Schedule) */
-table {
+/* Table & Tag Styling */
+.timeline-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background: white;
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #eee; /* Yatay çizgiler */
+.timeline-table td, .timeline-table th {
+    border: 1px solid #ddd;
+    padding: 12px;
 }
 
-th {
-    background-color: #3498db;
+.tag {
+    padding: 5px 10px;
+    border-radius: 4px;
     color: white;
+    font-size: 0.8em;
 }
 
-/* Talimattaki "Yatay Renklendirme" (Zebra Görünüm) */
-tbody tr:nth-child(even) {
-    background-color: #f2f7fb;
-}
+.blue { background-color: #3498db; }
+.green { background-color: #2ecc71; }
+.orange { background-color: #e67e22; }
 
-/* Form ve Buton Tasarımı */
-form {
-    display: flex;
+/* Form Layout */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex; /* Div-based flex structure */
     flex-direction: column;
     gap: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #219150;
-}
-
-/* Iframe (Harita vb. için) */
-iframe {
-    border: 2px solid #eee;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* İstatistiksel Görünüm (Statistical Engine) */
-.stat-box {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background: #f0f3f4;
-    border-radius: 8px;
-    text-align: center;
 }
