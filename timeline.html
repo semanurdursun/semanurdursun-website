@@ -1,41 +1,48 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>Timeline</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<div class="container">
+    <h2>Academic & Project Timeline</h2>
+    <table class="timeline-table">
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Activity</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="academic">
+                <td>2024 - Present</td>
+                <td>Web Design & Programming (2nd Year)</td>
+                <td><span class="tag blue">Education</span></td>
+            </tr>
+            <tr class="project">
+                <td>Jan 2026</td>
+                <td>Uçuş Saati Projesi - Finance Lead</td>
+                <td><span class="tag green">Work</span></td>
+            </tr>
+            <tr class="sport">
+                <td>Weekly</td>
+                <td>Tennis / Swimming</td>
+                <td><span class="tag orange">Activity</span></td>
+            </tr>
+        </tbody>
+    </table>
 
-<body>
+    <div class="stats-box">
+        <h3>Project Statistics</h3>
+        <p>Total Project Hours: <span id="hourCounter">0</span></p>
+    </div>
+</div>
 
-<h1>Timeline</h1>
-
-<ul>
-  <li>2023 – Üniversiteye başladım</li>
-  <li>2024 – Web projelerine başladım</li>
-  <li>2025 – Profesyonel çalışmalar</li>
-</ul>
-
-<h2>Ders Programı</h2>
-
-<table border="1" style="border-collapse:collapse; width:70%; text-align:center;">
-<tr style="background:lightblue;">
-  <th>Pazartesi</th><th>Salı</th><th>Çarşamba</th>
-</tr>
-<tr>
-  <td>Matematik</td><td>Web Tasarım</td><td>Proje</td>
-</tr>
-<tr style="background:#f4f4f4;">
-  <td>Spor</td><td>Sanat</td><td>İngilizce</td>
-</tr>
-</table>
-
-<h2>Spam Koruma</h2>
-
-<label>
-  <input type="checkbox" required>
-  Robot değilim
-</label>
-
-</body>
-</html>
+<script>
+    // Simple Statistical Engine Logic
+    let count = 0;
+    const target = 150; // Example stat
+    const counter = setInterval(() => {
+        if(count < target) {
+            count++;
+            document.getElementById('hourCounter').innerText = count;
+        } else {
+            clearInterval(counter);
+        }
+    }, 20);
+</script>
