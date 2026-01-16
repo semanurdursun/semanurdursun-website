@@ -1,117 +1,33 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CV – Sema Nur Dursun</title>
-
-<style>
-
-body{
-  font-family: Arial;
-  background:#f3f3f3;
-  margin:0;
-  padding:0;
-}
-
-.cv-container{
-  width:70%;
-  margin:auto;
-  margin-top:30px;
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 0 10px gray;
-}
-
-/* Başlık */
-.section-title{
-  font-size:22px;
-  border-left:5px solid purple;
-  padding-left:10px;
-  margin-top:25px;
-}
-
-/* İki sütun */
-.row{
-  display:flex;
-  gap:20px;
-}
-
-.box{
-  width:50%;
-  border:1px solid #ccc;
-  padding:15px;
-  border-radius:10px;
-}
-
-.skill-bar{
-  background:#ddd;
-  height:15px;
-  border-radius:10px;
-}
-
-.level{
-  height:15px;
-  border-radius:10px;
-  width:80%;
-  background:linear-gradient(to right, purple, pink);
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<div class="cv-container">
+    <div class="container">
+        <h2>Curriculum Vitae</h2>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="border-left: 6px solid #FFC0CB; padding-left: 20px;">
+                [cite_start]<h3>Sema Nur Dursun [cite: 1]</h3>
+                [cite_start]<p>Management Information Systems student at Istanbul Topkapı University[cite: 14, 46]. [cite_start]Aspire Leaders Program graduate[cite: 7].</p>
+            </div>
 
-<h1>Sema Nur Dursun – CV</h1>
-
-<div class="section-title">Kişisel Bilgiler</div>
-
-<div class="row">
-
-  <div class="box">
-    <p><b>Ad:</b> Sema Nur Dursun</p>
-    <p><b>Bölüm:</b> Yönetim Bilişim Sistemleri</p>
-    <p><b>Sınıf:</b> 1. sınıf</p>
-  </div>
-
-  <div class="box">
-    <p><b>E-posta:</b> semanurdursun@example.com</p>
-    <p><b>Şehir:</b> —</p>
-    <p><b>Durum:</b> Öğrenci</p>
-  </div>
-
-</div>
-
-<div class="section-title">Eğitim Bilgileri</div>
-
-<ul>
-  <li>Lisans – Yönetim Bilişim Sistemleri</li>
-  <li>Lise – (okul adını ekleyebilirsin)</li>
-</ul>
-
-<div class="section-title">Yetenekler</div>
-
-<p>HTML – CSS – JavaScript</p>
-<div class="skill-bar"><div class="level"></div></div>
-
-<p>Python</p>
-<div class="skill-bar"><div class="level" style="width:65%;"></div></div>
-
-<p>Veri Analizi</p>
-<div class="skill-bar"><div class="level" style="width:70%;"></div></div>
-
-<div class="section-title">Projeler</div>
-
-<ul>
-  <li>Kişisel Web Sitesi</li>
-  <li>Veri Analizi Çalışmaları</li>
-  <li>Akademik araştırma taslakları</li>
-</ul>
-
-</div>
-
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    [cite_start]<li>Programming: Python (Beginner), SQL (MSSQL), HTML/CSS (Basic) [cite: 19, 20]</li>
+                    [cite_start]<li>Languages: English (B2), German (A1), French (A1) [cite: 24, 25, 27, 29]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
