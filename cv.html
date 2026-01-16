@@ -12,12 +12,10 @@
     <img src="logo.png" class="logo">
     <span class="brand-name">NOREY</span>
   </div>
-
   <div class="lang">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('tr')">TR</button>
   </div>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="cv.html">CV</a>
@@ -26,40 +24,27 @@
   </nav>
 </header>
 
-<main class="cv-page">
-
-  <section class="cv-hero">
-    <h1 data-en="Curriculum Vitae" data-tr="Özgeçmiş">Curriculum Vitae</h1>
-    <p data-en="Management Information Systems Student"
-       data-tr="Yönetim Bilişim Sistemleri Öğrencisi">
-       Management Information Systems Student
-    </p>
-  </section>
-
-  <section class="cv-section">
+<main class="cv-wrap">
+  <div class="cv-card big">
     <h2 data-en="Profile" data-tr="Profil">Profile</h2>
-    <p data-en="Second-year MIS student interested in web design, SEO, and digital systems."
-       data-tr="Web tasarımı, SEO ve dijital sistemlerle ilgilenen ikinci sınıf YBS öğrencisi.">
-       Second-year MIS student interested in web design, SEO, and digital systems.
+    <p data-en="Second-year MIS student focused on web design, SEO, and digital projects."
+       data-tr="Web tasarımı, SEO ve dijital projelere odaklanan ikinci sınıf YBS öğrencisi.">
+       Second-year MIS student focused on web design, SEO, and digital projects.
     </p>
-  </section>
+  </div>
 
-  <section class="cv-section">
+  <div class="cv-card">
     <h2 data-en="Education" data-tr="Eğitim">Education</h2>
     <p>Istanbul Topkapı University<br>Management Information Systems</p>
-  </section>
+  </div>
 
-  <section class="cv-section">
+  <div class="cv-card">
     <h2 data-en="Skills" data-tr="Yetenekler">Skills</h2>
-    <div class="skill-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>WordPress</span>
-      <span>SEO</span>
+    <div class="chips">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>WordPress</span><span>SEO</span>
     </div>
-  </section>
-
+  </div>
 </main>
 
 <footer class="fixed-footer">
@@ -70,13 +55,10 @@
 <script>
 function setLang(lang){
   localStorage.setItem("siteLang", lang);
-  document.querySelectorAll("[data-en]").forEach(el=>{
-    el.innerText = el.dataset[lang];
-  });
+  document.querySelectorAll("[data-en]").forEach(e=>e.innerText=e.dataset[lang]);
 }
-
 document.addEventListener("DOMContentLoaded",()=>{
-  setLang(localStorage.getItem("siteLang") || "en");
+  setLang(localStorage.getItem("siteLang")||"en");
 });
 </script>
 
