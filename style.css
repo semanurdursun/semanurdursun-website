@@ -1,136 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #000;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: black;
 }
 
 .header {
+  background: hotpink;
+  padding: 16px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: #ff4fa3;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
 }
 
-.name {
-  color: #000;
+.brand-name {
   font-size: 26px;
-  font-weight: bold;
-  border: 2px solid #000;
-  padding: 6px 14px;
-  border-radius: 14px;
+  font-weight: 800;
+  margin-left: 10px;
+  border: 2px solid black;
+  padding: 4px 12px;
 }
 
-.menu a {
+nav a {
   margin-left: 16px;
-  color: #000;
+  color: black;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.lang-switch button {
-  margin-right: 6px;
-  padding: 6px 10px;
-  background: #ff9800;
+.lang button {
+  background: orange;
   border: none;
+  padding: 6px 10px;
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  margin: 60px 20px;
-}
-
-.hero h1 {
-  font-size: 36px;
-  color: #ff4fa3;
-}
-
-.section {
+.container {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 80px auto;
+  text-align: center;
 }
 
-.cv-container {
+.cv-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
   gap: 20px;
   padding: 40px;
 }
 
-.cv-card {
-  border: 3px solid #ff9800;
+.card {
+  border: 3px solid orange;
   padding: 20px;
 }
 
 .tag {
   display: inline-block;
+  background: hotpink;
   margin: 6px;
   padding: 6px 12px;
-  background: #ff4fa3;
-  color: #000;
   font-weight: bold;
 }
 
 .timeline {
   width: 90%;
-  margin: 60px auto;
+  margin: 80px auto;
   border-collapse: collapse;
 }
 
-.timeline th,
-.timeline td {
-  border: 2px solid #000;
+.timeline th, .timeline td {
+  border: 2px solid black;
   padding: 12px;
 }
 
 iframe {
   width: 100%;
-  height: 300px;
+  height: 350px;
   border: none;
-}
-
-.footer {
-  text-align: center;
-  padding: 16px;
-  background: #ff9800;
-  font-weight: bold;
 }
 
 .fixed-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-.hero p,
-.section p {
-  display: block;
-  margin-top: 12px;
-  font-size: 18px;
-}
-
-.skills {
-  margin-top: 30px;
-}
-
-.skill-box {
-  display: inline-block;
-  margin: 10px 8px;
-  padding: 12px 18px;
+  background: orange;
+  text-align: center;
   font-weight: bold;
+  padding: 8px;
 }
-
-.news p {
-  display: block;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
