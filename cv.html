@@ -1,46 +1,67 @@
+<!-- cv.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <nav class="navbar">
-  <div class="brand">
-    <img src="logo.png" alt="NOREY Logo" class="logo">
-    <span class="brand-name">NOREY</span>
-  </div>
-
-  <a href="index.html">Home</a>
-  <a href="cv.html">CV</a>
-  <a href="timeline.html">Timeline</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>NOREY | CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <div class="container">
-        <h2>Curriculum Vitae</h2>
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-            <div style="border-left: 6px solid #FFC0CB; padding-left: 20px;">
-                [cite_start]<h3>Sema Nur Dursun [cite: 1]</h3>
-                [cite_start]<p>Management Information Systems student at Istanbul Topkapı University[cite: 14, 46]. [cite_start]Aspire Leaders Program graduate[cite: 7].</p>
-            </div>
+<header class="header">
+  <div class="logo-area">
+    <img src="logo.png" class="logo">
+    <span class="name">NOREY</span>
+  </div>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-            <div>
-                <h3>Skills</h3>
-                <ul>
-                    [cite_start]<li>Programming: Python (Beginner), SQL (MSSQL), HTML/CSS (Basic) [cite: 19, 20]</li>
-                    [cite_start]<li>Languages: English (B2), German (A1), French (A1) [cite: 24, 25, 27, 29]</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<main class="cv-container">
+
+<section class="cv-section">
+<h2>Profile</h2>
+<p>Second-year Management Information Systems student focused on web and data systems.</p>
+</section>
+
+<section class="cv-section">
+<h2>Education</h2>
+<p>Istanbul Topkapı University<br>B.Sc. Management Information Systems (2023–2027)</p>
+</section>
+
+<section class="cv-section">
+<h2>Experience</h2>
+<ul>
+<li>Student Assistant – Communication Office</li>
+<li>Finance Team Lead – Flight Hour Project</li>
+<li>Communication Intern – Gökçeada Municipality</li>
+<li>Volunteer – LÖSEV</li>
+</ul>
+</section>
+
+<section class="cv-section">
+<h2>Skills</h2>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Python</div>
+<div class="skill">SQL</div>
+</section>
+
+<section class="cv-section">
+<h2>Languages</h2>
+<ul>
+<li>English – B2</li>
+<li>German – A1</li>
+<li>French – A1</li>
+</ul>
+</section>
+
+</main>
+
 </body>
 </html>
+
