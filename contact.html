@@ -8,23 +8,29 @@
 <body>
 
 <header class="header">
-  <div class="lang">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('tr')">TR</button>
-</div>
-
   <div class="brand">
     <img src="logo.png" class="logo">
     <span class="brand-name">NOREY</span>
   </div>
+  <div class="lang">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('tr')">TR</button>
+  </div>
 </header>
 
-<iframe src="https://maps.google.com/maps?q=uskudar%20istanbul&output=embed"></iframe>
+<iframe class="map" src="https://maps.google.com/maps?q=uskudar%20istanbul&output=embed"></iframe>
 
 <footer class="fixed-footer">
 📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
 <br>© 2026 Sema Nur Dursun — MIS Student Project
 </footer>
 
+<script>
+function setLang(lang){
+  localStorage.setItem("siteLang", lang);
+}
+</script>
+
 </body>
 </html>
+
