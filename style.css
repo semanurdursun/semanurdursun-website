@@ -8,6 +8,11 @@ body {
 }
 
 .header {
+  <div class="lang">
+  <button onclick="setLang('en')">EN</button>
+  <button onclick="setLang('tr')">TR</button>
+</div>
+
   background: hotpink;
   padding: 16px 30px;
   display: flex;
