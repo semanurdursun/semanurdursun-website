@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>İletişim Formu</title>
-</head>
+<div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        
+        <div class="interests">
+            <p>Select Interests:</p>
+            <label><input type="checkbox" name="topic" value="web"> Web Design</label>
+            <label><input type="checkbox" name="topic" value="finance"> Finance</label>
+            <label><input type="checkbox" name="topic" value="aviation"> Aviation</label>
+        </div>
 
-<body>
+        <div class="map-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12038.567!2d28.978!3d41.008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2str!4v123456789" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
-<h1>İletişim Formu</h1>
-
-<form id="myForm">
-
-Adınız: <input type="text" name="ad"><br><br>
-
-Hobileriniz:<br>
-<label><input type="checkbox" value="Spor"> Spor</label><br>
-<label><input type="checkbox" value="Müzik"> Müzik</label><br>
-<label><input type="checkbox" value="Kitap"> Kitap</label><br><br>
-
-<!-- iframe zorunlu -->
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-width="300" height="200"></iframe>
-<br><br>
-
-<button type="submit">Gönder</button>
-
-</form>
+        <button type="button" onclick="handleFormSubmit()">Submit</button>
+    </form>
+</div>
 
 <script>
-document.getElementById("myForm").addEventListener("submit", function(e){
-  e.preventDefault();
-  window.location.href = "mailto:semanurdursun@example.com?subject=Form%20Bilgileri";
-});
+    function handleFormSubmit() {
+        // JavaScript running in background
+        alert("Form data collected! Redirecting to email client...");
+        
+        const email = "your-email@example.com";
+        const subject = "Project Form Submission";
+        const body = "New form entry received from your GitHub Pages site.";
+        
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
 </script>
-
-</body>
-</html>
