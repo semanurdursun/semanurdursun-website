@@ -73,12 +73,13 @@ h1, h2, h3 { color: #2ECC71; } /* Green */
   gap: 10px;
 }
 
-.logo {
-  height: 32px;   /* 🔴 BURASI EN ÖNEMLİ */
-  width: auto;
+.snd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.brand-name {
-  font-size: 20px;
-  font-weight: bold;
+.snd-logo {
+  height: 28px;   /* 🔴 burayı istersen küçült/büyüt */
+  width: auto;
 }
