@@ -110,3 +110,27 @@ iframe {
   bottom: 0;
   width: 100%;
 }
+.hero p,
+.section p {
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skill-box {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+.news p {
+  display: block;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
