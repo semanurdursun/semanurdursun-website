@@ -59,3 +59,7 @@ h1, h2, h3 { color: #2ECC71; } /* Green */
     border-radius: 5px;
     cursor: pointer;
 }
+.logo {
+  height: 45px;
+  width: auto;
+}
