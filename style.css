@@ -59,7 +59,26 @@ h1, h2, h3 { color: #2ECC71; } /* Green */
     border-radius: 5px;
     cursor: pointer;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .logo {
-  height: 45px;
+  height: 32px;   /* 🔴 BURASI EN ÖNEMLİ */
   width: auto;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
 }
