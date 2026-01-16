@@ -1,72 +1,38 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Sema Nur Dursun</title>
-  <link rel="stylesheet" href="style.css">
-
-
-<style>
-
-body{
-  margin:0;
-  font-family:Arial;
-}
-
-/* ÜST MENÜ */
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px;
-  background:#222;
-  color:white;
-}
-
-.logo{
-  font-size:22px;
-  font-weight:bold;
-}
-
-nav a{
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-}
-
-nav a:hover{
-  color:#ffcc00;
-}
-
-.main{
-  padding:40px;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <title>Sema Nur Dursun | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<header>
+    <div class="container">
+        <div style="text-align:center; margin-bottom: 20px;">
+            <div style="border: 4px solid #FFC0CB; display:inline-block; padding:15px; border-radius:50%; color:#E67E22; font-size: 24px; font-weight:bold;">SND</div>
+        </div>
 
-  <div class="logo">
-    SEMA LOGO
-  </div>
+        <h1>Welcome</h1>
+        <div style="background: #fdf2f4; padding: 15px; border-radius: 8px;">
+            <h3>HTML Tutorial</h3>
+            <p>The <code>&lt;div&gt;</code> element is a generic container for flow content. Using CSS properties like <code>display: flex</code> or <code>grid</code> allows for modern, responsive layouts without relying on legacy table structures.</p>
+        </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="form.html">Form</a>
-    <a href="news.html">News</a>
-  </nav>
-
-</header>
-
-<div class="main">
-  <h1>Hoş geldiniz</h1>
-  <p>Bu benim web sitemin ana sayfasıdır.</p>
-</div>
-
+        <div style="margin-top: 30px; border-top: 2px solid #E67E22; padding-top: 20px;">
+            <h3>News Publication / Haberler</h3>
+            <div id="news-en">
+                <p><strong>EN:</strong> Setting up a news site involves selecting a CMS like WordPress, installing SEO plugins like Yoast, and using WooCommerce for monetization.</p>
+            </div>
+            <div id="news-tr" style="color: #666;">
+                <p><strong>TR:</strong> Haber sitesi kurulumu; WordPress gibi bir CMS seçmeyi, Yoast gibi SEO eklentileri yüklemeyi ve para kazanma için WooCommerce kullanmayı içerir.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
