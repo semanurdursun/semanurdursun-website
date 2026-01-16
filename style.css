@@ -1,31 +1,61 @@
-/* Table & Tag Styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background: #FFC0CB; /* Pink */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 4px solid #E67E22; /* Orange */
+    border-radius: 12px;
+}
+
+h1, h2, h3 { color: #2ECC71; } /* Green */
+
 .timeline-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .timeline-table td, .timeline-table th {
-    border: 1px solid #ddd;
+    border: 2px solid #FFC0CB;
     padding: 12px;
+    text-align: left;
 }
 
 .tag {
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 4px;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.85em;
 }
 
-.blue { background-color: #3498db; }
-.green { background-color: #2ecc71; }
-.orange { background-color: #e67e22; }
+.pink-bg { background-color: #FFC0CB; color: #333; }
+.green-bg { background-color: #2ECC71; }
+.orange-bg { background-color: #E67E22; }
 
-/* Form Layout */
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex; /* Div-based flex structure */
-    flex-direction: column;
-    gap: 15px;
+.btn-submit {
+    background-color: #2ECC71;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
