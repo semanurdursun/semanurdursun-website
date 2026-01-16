@@ -1,91 +1,112 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff5f8;
-  color: #1f3d2b;
+  background: #fff;
+  color: #000;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: #ffe4ec;
-  border-bottom: 4px solid #c0392b;
-}
-
-.logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  padding: 18px 40px;
+  background: #ff4fa3;
 }
 
 .logo {
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .name {
-  font-size: 24px;
+  color: #000;
+  font-size: 26px;
   font-weight: bold;
-  color: #c0392b;
+  border: 2px solid #000;
+  padding: 6px 14px;
+  border-radius: 14px;
 }
 
 .menu a {
-  margin-left: 20px;
+  margin-left: 16px;
+  color: #000;
   text-decoration: none;
-  color: #1f3d2b;
+  font-weight: bold;
 }
 
-.content {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+.lang-switch button {
+  margin-right: 6px;
+  padding: 6px 10px;
+  background: #ff9800;
+  border: none;
+  font-weight: bold;
 }
 
-.box {
-  display: inline-block;
-  padding: 10px 15px;
-  border: 2px solid #c0392b;
-  margin: 6px;
+.hero {
+  text-align: center;
+  margin: 60px 20px;
 }
 
-.cv-section {
-  margin-bottom: 40px;
+.hero h1 {
+  font-size: 36px;
+  color: #ff4fa3;
+}
+
+.section {
+  max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
-  background: #ffeef4;
-  border-left: 6px solid #c0392b;
 }
 
-.skill {
+.cv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.cv-card {
+  border: 3px solid #ff9800;
+  padding: 20px;
+}
+
+.tag {
   display: inline-block;
-  margin: 5px;
-  padding: 8px 14px;
-  border: 2px solid #c0392b;
+  margin: 6px;
+  padding: 6px 12px;
+  background: #ff4fa3;
+  color: #000;
+  font-weight: bold;
 }
 
 .timeline {
-  width: 100%;
+  width: 90%;
+  margin: 60px auto;
   border-collapse: collapse;
 }
 
 .timeline th,
 .timeline td {
-  border: 1px solid #c0392b;
-  padding: 10px;
+  border: 2px solid #000;
+  padding: 12px;
 }
-
-.tag {
-  color: white;
-  text-align: center;
-}
-
-.tech { background: #1f3d2b; }
-.art { background: #c0392b; }
-.sport { background: #d35400; }
 
 iframe {
   width: 100%;
   height: 300px;
-  margin-top: 20px;
-  border: 0;
+  border: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: #ff9800;
+  font-weight: bold;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
