@@ -2,50 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CV & Timeline</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body class="logo-bg">
+    <header class="baby-blue-nav">
         <div class="header-container">
             <a href="index.html"><img src="NOREY LOGO.png" class="logo-img"></a>
-            <button id="lang-btn" class="cool-btn">TR / EN</button>
+            <button id="lang-btn" class="action-btn">TR / EN</button>
         </div>
     </header>
 
     <main class="content-wrapper">
-        <h2 style="color: green;"><b>CLASS SCHEDULE</b></h2>
-        <table class="schedule-table">
-            <tr style="background-color: pink;">
-                <td>09:00-12:00</td><td>-</td><td><b>Data Structure</b></td><td>-</td><td><b>Web Design</b></td>
-            </tr>
-            <tr style="background-color: yellow;">
-                <td>12:00-15:00</td><td><b>Management Org.</b></td><td><b>MIS</b></td><td><b>Business Analysis</b></td><td>-</td>
-            </tr>
-            <tr style="background-color: orange;">
-                <td>15:00-18:00</td><td>-</td><td><b>Marketing Mgmt.</b></td><td>-</td><td>-</td>
-            </tr>
-        </table>
-
-        <h2 style="color: blue;"><b>PROFESSIONAL TIMELINE</b></h2>
-        <div class="timeline-container">
-            <div style="display:none;"><input type="text" name="spam_check"></div>
-            
-            <div class="timeline-entry" style="border-left: 10px solid red;">
-                <h4 data-key="time_1">2023 - 2027</h4>
-                <p><b>Statistical Engineering Focus</b></p>
-                <p>B.Sc. in Management Information Systems, Istanbul Topkapı University.</p>
+        <h2 class="impact-header" data-key="nav_cv">CURRICULUM VITAE</h2>
+        
+        <div class="cv-grid">
+            <div class="glass-card" style="border-top: 5px solid #FFD700;">
+                <h3 data-key="skills_title">TECHNICAL SKILLS [cite: 18]</h3>
+                <ul>
+                    <li>Python (Beginner), SQL (MSSQL), HTML/CSS [cite: 19, 20]</li>
+                    <li>Microsoft SQL Server Databases [cite: 20]</li>
+                    <li>Problem Solving & Stress Resilience [cite: 20, 21]</li>
+                </ul>
             </div>
-            <div class="timeline-entry" style="border-left: 10px solid pink;">
-                <h4 data-key="time_2">Oct 2025 - Present</h4>
-                <p><b>Finance Team Lead</b> - Flight Hour Project.</p>
+
+            <div class="glass-card" style="border-top: 5px solid #FF69B4;">
+                <h3 data-key="lang_title">LANGUAGES [cite: 23]</h3>
+                <ul>
+                    <li>English - B2 (Upper-Intermediate) [cite: 24]</li>
+                    <li>German - A1 (Beginner) [cite: 25, 26]</li>
+                    <li>French - A1 (Beginner) [cite: 27, 29]</li>
+                </ul>
             </div>
         </div>
 
-        <section class="activities">
-            <h3 style="color: orange;"><b>ARTS & SPORTS</b></h3>
-            <p>LÖSEV Volunteer Work (2021-Present).</p>
-        </section>
+        <h2 class="impact-header" style="color: pink; margin-top: 40px;" data-key="schedule_title">WEEKLY SCHEDULE</h2>
+        <table class="schedule-table">
+            <tr class="baby-blue-nav" style="color: white;">
+                <th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th>
+            </tr>
+            <tr style="background-color: rgba(255, 255, 224, 0.8);">
+                <td>09:00-12:00</td><td>-</td><td>Data Structure</td><td>-</td><td>Web Design</td>
+            </tr>
+            <tr style="background-color: rgba(144, 238, 144, 0.8);">
+                <td>12:00-15:00</td><td>Management Org.</td><td>MIS</td><td>Business Analysis</td><td>-</td>
+            </tr>
+            <tr style="background-color: rgba(255, 215, 0, 0.8);">
+                <td>15:00-18:00</td><td>-</td><td>Marketing Management</td><td>-</td><td>-</td>
+            </tr>
+        </table>
     </main>
     <script src="lang.js"></script>
 </body>
