@@ -8,84 +8,48 @@
 
 <body>
 
-<header class="navbar">
+<div class="navbar">
   <div class="logo">
-    <img src="logo.png" width="50" alt="Logo">
+    <img src="logo.png" width="50">
   </div>
 
-  <nav class="menu">
-    <a href="index.html" id="navHome">Home</a>
-    <a href="cv.html" id="navCV">CV</a>
-    <a href="timeline.html" id="navTimeline">Timeline</a>
-    <a href="contact.html" id="navContact" class="active">Contact</a>
-  </nav>
+  <div class="menu">
+    <a href="index.html" data-key="navHome"></a>
+    <a href="cv.html" data-key="navCV"></a>
+    <a href="timeline.html" data-key="navTimeline"></a>
+    <a href="contact.html" data-key="navContact"></a>
+  </div>
 
   <div class="lang">
-    <button onclick="setTR()">TR</button>
-    <button onclick="setEN()">EN</button>
+    <button onclick="setLang('tr')">TR</button>
+    <button onclick="setLang('en')">EN</button>
   </div>
-</header>
+</div>
 
-<main class="contact-container">
+<main class="contact-wrap">
 
-  <section class="contact-hero">
-    <h1 id="pageTitle">Contact</h1>
-    <p id="contactSubtitle">
-      Feel free to get in touch for academic, project, or collaboration purposes.
-    </p>
-  </section>
+  <h1 data-key="contactTitle"></h1>
 
-  <section class="contact-content">
+  <div class="contact-box">
 
-    <div class="contact-info">
-      <h2>Contact Information</h2>
-      <p>📍 Üsküdar / Istanbul, Turkey</p>
-      <p>✉️ dursunnurstudent@gmail.com</p>
-      <p>📞 +90 555 038 22 47</p>
-    </div>
+    <form onsubmit="sendMail(); return false;">
+      
+      <label data-key="nameLabel"></label>
+      <input type="text" required>
 
-    <div class="contact-form">
-      <h2>Contact Form</h2>
+      <label data-key="emailLabel"></label>
+      <input type="email" required>
 
-      <form action="https://formsubmit.co/dursunnurstudent@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Contact Message">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="website" style="display:none">
+      <label data-key="interestLabel"></label>
+      <div class="checks">
+        <label><input type="checkbox"> <span data-key="interest1"></span></label>
+        <label><input type="checkbox"> <span data-key="interest2"></span></label>
+        <label><input type="checkbox"> <span data-key="interest3"></span></label>
+      </div>
 
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
+      <label data-key="messageLabel"></label>
+      <textarea rows="4"></textarea>
 
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-
-        <label>Interested In</label>
-        <div class="checkbox-group">
-          <label><input type="checkbox" name="interest[]" value="Academic Collaboration"> Academic Collaboration</label>
-          <label><input type="checkbox" name="interest[]" value="Project Work"> Project Work</label>
-          <label><input type="checkbox" name="interest[]" value="Volunteering"> Volunteering</label>
-        </div>
-
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-  </section>
-
-  <section class="contact-map">
-    <iframe
-      src="https://maps.google.com/maps?q=uskudar%20istanbul&output=embed"
-      loading="lazy">
-    </iframe>
-  </section>
-  <script src="lang.js"></script>
-
+      <label class="agree">
+        <input type="checkb
 
