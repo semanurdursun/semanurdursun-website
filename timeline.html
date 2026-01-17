@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="logo-bg">
+<body class="watermark-bg">
     <header class="baby-blue-nav">
         <div class="header-container">
             <a href="index.html"><img src="NOREY LOGO.png" class="logo-img"></a>
@@ -12,24 +12,29 @@
     </header>
 
     <main class="content-wrapper">
-        <h2 class="impact-header" style="color: #FF4500;" data-key="nav_timeline">PROFESSIONAL TIMELINE</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <h4 data-key="time_1">2023 - 2027 (Expected) [cite: 14, 15]</h4>
-                <p><b>B.Sc. in Management Information Systems</b> [cite: 14]</p>
-                <p>Istanbul Topkapı University - Statistical Engineering Focus [cite: 10, 14]</p>
-            </div>
+        <h2 class="impact-header" data-key="schedule_title">WEEKLY SCHEDULE</h2>
+        <table class="schedule-table">
+            <tr style="background-color: #333; color: white;">
+                <th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th>
+            </tr>
+            <tr style="background-color: #FFFFE0;"> <td>09:00-12:00</td><td>-</td><td>Data Structure</td><td>-</td><td>Web Design</td>
+            </tr>
+            <tr style="background-color: #90EE90;"> <td>12:00-15:00</td><td>Management Org.</td><td>MIS</td><td>Business Analysis</td><td>-</td>
+            </tr>
+            <tr style="background-color: #FFD700;"> <td>15:00-18:00</td><td>-</td><td>Marketing Management</td><td>-</td><td>-</td>
+            </tr>
+        </table>
 
-            <div class="timeline-item">
-                <h4 data-key="time_2">Oct 2025 - Present [cite: 32]</h4>
-                <p><b>Finance Team Lead - Flight Hour Project</b> [cite: 32]</p>
-                <p>Leading the finance team and managing budget processes. [cite: 32]</p>
+        <h2 class="impact-header" style="color: #FF4500;">PROFESSIONAL TIMELINE</h2>
+        <div class="timeline">
+            <div style="display:none;"><input type="text" name="bot_check" id="spam_field"></div>
+            
+            <div class="timeline-item" style="border-left: 10px solid #89CFF0;">
+                <h4 data-key="time_1">2023 - 2027</h4>
+                <p><b>Statistical Engineering Focus / MIS</b> </p>
             </div>
-
-            <div class="timeline-item">
-                <h4 data-key="time_3">2021 - Present [cite: 42]</h4>
-                <p><b>LÖSEV Volunteer</b> [cite: 41]</p>
-                <p>Active volunteer since 2021, supporting various social responsibility projects. [cite: 42, 43]</p>
+            <div class="timeline-item" style="border-left: 10px solid #FF69B4;"> <h4 data-key="time_2">Oct 2025 - Present</h4>
+                <p><b>Finance Team Lead</b> - Flight Hour Project [cite: 32]</p>
             </div>
         </div>
     </main>
