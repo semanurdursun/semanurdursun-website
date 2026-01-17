@@ -8,39 +8,27 @@
     <header>
         <div class="header-container">
             <a href="index.html"><img src="NOREY LOGO.png" class="logo-img"></a>
-            <button id="lang-btn" class="cool-btn">TR / EN</button>
         </div>
     </header>
 
-    <main class="content-wrapper">
-        <div class="styled-div-form">
-            <h2 style="color: orange;"><b>CONTACT ME</b></h2>
-            <form id="portfolio-form">
-                <input type="text" id="user_name" placeholder="Full Name" required>
-                <div class="check-box-group">
-                    <p><b>Interests:</b></p>
-                    <label><input type="checkbox" name="skill" value="Art"> Artistic</label>
-                    <label><input type="checkbox" name="skill" value="Sports"> Sports</label>
-                </div>
-                <button type="submit" class="cool-btn" style="background-color: green; color: white;">SUBMIT EMAIL</button>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>📍 Üsküdar/ Istanbul | ✉️ info@semanurdursun.com | 📞 +90 5XX XXX XX XX</p>
-            <p>© 2026 Sema Nur Dursun Webdesign Student Project</p>
-        </div>
-    </footer>
+    <div class="styled-div-form">
+        <h2 style="color: red;"><b>CONTACT</b></h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <div class="checkboxes">
+                <label><input type="checkbox" value="Art"> Artistic Activities</label>
+                <label><input type="checkbox" value="Sports"> Sports Activities</label>
+            </div>
+            <button type="submit" class="cool-btn" style="background: green; color: white;">SEND EMAIL</button>
+        </form>
+    </div>
 
     <script>
-        document.getElementById('portfolio-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const name = document.getElementById('user_name').value;
-            window.location.href = `mailto:info@semanurdursun.com?subject=Contact from ${name}`;
+            const user = document.getElementById('name').value;
+            window.location.href = `mailto:dursunnurstudent@gmail.com?subject=Portfolio Contact&body=Hi, I am ${user}`;
         });
     </script>
-    <script src="lang.js"></script>
 </body>
 </html>
