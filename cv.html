@@ -5,9 +5,10 @@
   <title>NOREY | CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="navbar">
 
+<body>
+
+<div class="navbar">
     <div class="logo">
         <img src="logo.png" width="50">
     </div>
@@ -23,48 +24,37 @@
         <button onclick="setTR()">TR</button>
         <button onclick="setEN()">EN</button>
     </div>
-
 </div>
 
 
-<header class="header">
-  <div class="brand">
-    <img src="logo.png" class="logo">
-    <span class="brand-name">NOREY</span>
-  </div>
-  <div class="lang">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('tr')">TR</button>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
 <main class="cv-wrap">
+
   <div class="cv-card big">
-    <h2 data-en="Profile" data-tr="Profil">Profile</h2>
-    <p data-en="Second-year MIS student focused on web design, SEO, and digital projects."
-       data-tr="Web tasarımı, SEO ve dijital projelere odaklanan ikinci sınıf YBS öğrencisi.">
-       Second-year MIS student focused on web design, SEO, and digital projects.
+    <h2 id="profileTitle">Profile</h2>
+    <p id="profileText">
+      Second-year MIS student focused on web design, SEO, and digital projects.
     </p>
   </div>
 
   <div class="cv-card">
-    <h2 data-en="Education" data-tr="Eğitim">Education</h2>
-    <p>Istanbul Topkapı University<br>Management Information Systems</p>
+    <h2 id="eduTitle">Education</h2>
+    <p id="eduText">
+      Istanbul Topkapi University<br>
+      Management Information Systems
+    </p>
   </div>
 
   <div class="cv-card">
-    <h2 data-en="Skills" data-tr="Yetenekler">Skills</h2>
+    <h2 id="skillsTitle">Skills</h2>
     <div class="chips">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>WordPress</span><span>SEO</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>WordPress</span>
+      <span>SEO</span>
     </div>
   </div>
+
 </main>
 
 <footer class="fixed-footer">
@@ -72,18 +62,10 @@
 <br>© 2026 Sema Nur Dursun — MIS Student Project
 </footer>
 
-<script>
-function setLang(lang){
-  localStorage.setItem("siteLang", lang);
-  document.querySelectorAll("[data-en]").forEach(e=>e.innerText=e.dataset[lang]);
-}
-document.addEventListener("DOMContentLoaded",()=>{
-  setLang(localStorage.getItem("siteLang")||"en");
-});
-</script>
-  <script src="lang.js"></script>
 
+<script src="lang.js"></script>
 
 </body>
 </html>
+
 
