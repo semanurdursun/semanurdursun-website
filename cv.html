@@ -8,64 +8,77 @@
 
 <body>
 
-<div class="navbar">
-    <div class="logo">
-        <img src="logo.png" width="50">
-    </div>
-
-    <div class="menu">
-        <a href="index.html" id="navHome">Home</a>
-        <a href="cv.html" id="navCV">CV</a>
-        <a href="timeline.html" id="navTimeline">Timeline</a>
-        <a href="contact.html" id="navContact">Contact</a>
-    </div>
-
-    <div class="lang">
-        <button onclick="setTR()">TR</button>
-        <button onclick="setEN()">EN</button>
-    </div>
-</div>
-
-
-<main class="cv-wrap">
-
-  <div class="cv-card big">
-    <h2 id="profileTitle">Profile</h2>
-    <p id="profileText">
-      Second-year MIS student focused on web design, SEO, and digital projects.
-    </p>
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.png" width="50" alt="Logo">
   </div>
 
-  <div class="cv-card">
-    <h2 id="eduTitle">Education</h2>
-    <p id="eduText">
-      Istanbul Topkapi University<br>
-      Management Information Systems
-    </p>
-  </div>
+  <nav class="menu">
+    <a href="index.html" id="navHome">Home</a>
+    <a href="cv.html" id="navCV" class="active">CV</a>
+    <a href="timeline.html" id="navTimeline">Timeline</a>
+    <a href="contact.html" id="navContact">Contact</a>
+  </nav>
 
-  <div class="cv-card">
-    <h2 id="skillsTitle">Skills</h2>
-    <div class="chips">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>WordPress</span>
-      <span>SEO</span>
+  <div class="lang">
+    <button onclick="setTR()">TR</button>
+    <button onclick="setEN()">EN</button>
+  </div>
+</header>
+
+<main class="cv-container">
+
+  <section class="cv-hero">
+    <h1>SEMA NUR DURSUN</h1>
+    <p>Management Information Systems Student</p>
+    <span>AI & Data Analytics Enthusiast</span>
+  </section>
+
+  <section class="cv-grid">
+
+    <div class="cv-card wide">
+      <h2 id="profileTitle">Profile</h2>
+      <p id="profileText">
+        Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree
+        in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a
+        forward-thinking and solution-oriented leadership approach, aiming to create innovative and
+        sustainable system solutions.
+      </p>
     </div>
-  </div>
 
-</main>
+    <div class="cv-card">
+      <h2 id="eduTitle">Education</h2>
+      <p>
+        <strong>Istanbul Topkapi University</strong><br>
+        B.Sc. Management Information Systems<br>
+        <span>2023 – Expected 2027</span>
+      </p>
+    </div>
 
-<footer class="fixed-footer">
-📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
-<br>© 2026 Sema Nur Dursun — MIS Student Project
-</footer>
+    <div class="cv-card">
+      <h2 id="skillsTitle">Technical Skills</h2>
+      <div class="chips">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python (Beginner)</span>
+        <span>SQL (MSSQL)</span>
+      </div>
+    </div>
 
+    <div class="cv-card">
+      <h2>Languages</h2>
+      <ul class="language-list">
+        <li>English — B2 (Upper-Intermediate)</li>
+        <li>German — A1 (Beginner)</li>
+        <li>French — A1 (Beginner)</li>
+      </ul>
+    </div>
 
-<script src="lang.js"></script>
-
-</body>
-</html>
+    <div class="cv-card wide">
+      <h2>Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <strong>Finance Team Lead — Flight Hour Project<
 
 
