@@ -1,2 +1,46 @@
 
+body {
+    font-family: 'Arial Black', sans-serif;
+    margin: 0; padding-bottom: 120px;
+    background-color: #f0f0f0;
+}
+
+b, h1, h2, h3 { font-weight: 900; text-transform: uppercase; }
+
+.header-container {
+    display: flex; justify-content: space-between; align-items: center;
+    background: blue; color: white; padding: 15px 5%;
+}
+
+.logo-img { height: 60px; cursor: pointer; }
+
+.nav-menu { display: flex; list-style: none; gap: 20px; }
+.nav-menu a { color: white; text-decoration: none; }
+
+.cool-btn {
+    padding: 12px 30px; border-radius: 50px; border: none;
+    font-weight: bold; cursor: pointer; transition: 0.3s;
+    background-color: yellow; color: black;
+}
+
+.cool-btn:hover { transform: scale(1.1); background-color: pink; }
+
+
+.schedule-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.schedule-table th, td { border: 4px solid black; padding: 15px; text-align: center; }
+
+.timeline { border-left: 8px solid red; padding: 20px; }
+.timeline-item { margin: 20px 0; padding: 15px; border: 4px solid; border-radius: 15px; background: white; }
+
+.styled-div-form {
+    border: 6px solid orange; padding: 40px; margin: 50px auto; max-width: 500px;
+    background: #fff; border-radius: 25px; box-shadow: 10px 10px 0px green;
+}
+
+
+footer {
+    position: fixed; bottom: 0; width: 100%;
+    background-color: #333; color: white;
+    text-align: center; padding: 15px 0; border-top: 5px solid pink;
+}
 
