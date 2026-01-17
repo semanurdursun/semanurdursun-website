@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html"><img src="NOREY LOGO.png" class="logo-img"></a>
+            <button id="lang-btn" class="cool-btn">TR / EN</button>
+        </div>
+    </header>
 
+    <main class="content-wrapper">
+        <div class="styled-div-form">
+            <h2 style="color: orange;"><b>CONTACT ME</b></h2>
+            <form id="portfolio-form">
+                <input type="text" id="user_name" placeholder="Full Name" required>
+                <div class="check-box-group">
+                    <p><b>Interests:</b></p>
+                    <label><input type="checkbox" name="skill" value="Art"> Artistic</label>
+                    <label><input type="checkbox" name="skill" value="Sports"> Sports</label>
+                </div>
+                <button type="submit" class="cool-btn" style="background-color: green; color: white;">SUBMIT EMAIL</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>📍 Üsküdar/ Istanbul | ✉️ info@semanurdursun.com | 📞 +90 5XX XXX XX XX</p>
+            <p>© 2026 Sema Nur Dursun Webdesign Student Project</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('portfolio-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('user_name').value;
+            window.location.href = `mailto:info@semanurdursun.com?subject=Contact from ${name}`;
+        });
+    </script>
+    <script src="lang.js"></script>
+</body>
+</html>
