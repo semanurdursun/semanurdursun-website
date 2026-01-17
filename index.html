@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NOREY | Home</title>
+  <title>NOREY | Timeline</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,34 +14,70 @@
   </div>
 
   <div class="menu">
-    <a href="index.html" data-key="navHome" class="active"></a>
-    <a href="cv.html" data-key="navCV"></a>
-    <a href="timeline.html" data-key="navTimeline"></a>
-    <a href="contact.html" data-key="navContact"></a>
+    <a href="index.html" id="navHome">Home</a>
+    <a href="cv.html" id="navCV">CV</a>
+    <a href="timeline.html" id="navTimeline" class="active">Timeline</a>
+    <a href="contact.html" id="navContact">Contact</a>
   </div>
 
   <div class="lang">
-    <button onclick="setLang('tr')">TR</button>
-    <button onclick="setLang('en')">EN</button>
+    <button onclick="setTR()">TR</button>
+    <button onclick="setEN()">EN</button>
   </div>
 </div>
 
-<main class="hero">
+<h1 id="pageTitle" style="text-align:center; margin-top:50px;">
+Weekly Course Schedule
+</h1>
 
-  <h1 id="homeName">Sema Nur Dursun</h1>
+<table class="schedule">
+  <tr>
+    <th id="thDay">Day</th>
+    <th id="thCourse">Course</th>
+    <th id="thTime">Time</th>
+  </tr>
 
-  <h2 data-key="homeTitle"></h2>
+  <tr>
+    <td id="mon">Monday</td>
+    <td id="course1">Management and Organization</td>
+    <td>12:00–15:00</td>
+  </tr>
 
-  <p data-key="homeDesc"></p>
+  <tr>
+    <td id="tue1">Tuesday</td>
+    <td id="course2">Data Structure</td>
+    <td>09:00–12:00</td>
+  </tr>
 
-</main>
+  <tr>
+    <td id="tue2">Tuesday</td>
+    <td id="course3">Management Information Systems</td>
+    <td>12:00–15:00</td>
+  </tr>
+
+  <tr>
+    <td id="tue3">Tuesday</td>
+    <td id="course4">Marketing Management</td>
+    <td>15:00–18:00</td>
+  </tr>
+
+  <tr>
+    <td id="wed">Wednesday</td>
+    <td id="course5">Business Process Analysis</td>
+    <td>12:00–15:00</td>
+  </tr>
+
+  <tr>
+    <td id="thu">Thursday</td>
+    <td id="course6">Web Design</td>
+    <td>09:00–12:00</td>
+  </tr>
+</table>
 
 <footer class="fixed-footer">
-📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
-<br>© 2026 Sema Nur Dursun — MIS Student Project
+  📍 Üsküdar / Istanbul &nbsp; ✉️ dursunnurstudent@gmail.com &nbsp; 📞 +90 555 038 22 47  
+  <br>© 2026 Sema Nur Dursun — MIS Student Project
 </footer>
 
-<script src="lang.js"></script>
-
-</body>
-</html>
+<button onclick="setTR()">TR</button>
+<button onclick="setEN()">EN</button>
