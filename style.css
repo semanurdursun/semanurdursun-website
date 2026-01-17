@@ -104,3 +104,23 @@ nav a{
   padding:10px;
   font-weight:700;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2933;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.lang button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
