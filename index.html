@@ -1,83 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NOREY | Timeline</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sema Nur Dursun | Portfolio Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="NOREY LOGO.png" alt="NOREY Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-key="home"><b>Home</b></a></li>
+                    <li><a href="cv.html" data-key="cv"><b>CV</b></a></li>
+                    <li><a href="contact.html" data-key="contact"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+            <button id="lang-btn" class="cool-btn">TR / EN</button>
+        </div>
+    </header>
 
-<div class="navbar">
-  <div class="logo">
-    <img src="logo.png" width="50">
-  </div>
+    <main class="content-wrapper">
+        <section class="cover-letter-section" style="border: 5px solid blue; padding: 30px; margin: 20px 0; background-color: #fff;">
+            <h1 style="color: red;" data-key="profile_title"><b>PROFILE INFO</b></h1>
+            <div class="cover-letter-content">
+                <p><b>Sema Nur Dursun</b></p>
+                <p data-key="cover_p1">Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems[cite: 6].</p>
+                <p data-key="cover_p2">As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach[cite: 7].</p>
+                <p data-key="cover_p3">I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field[cite: 8].</p>
+            </div>
+        </section>
 
-  <div class="menu">
-    <a href="index.html" id="navHome">Home</a>
-    <a href="cv.html" id="navCV">CV</a>
-    <a href="timeline.html" id="navTimeline" class="active">Timeline</a>
-    <a href="contact.html" id="navContact">Contact</a>
-  </div>
+        <section class="news-section">
+            <h2 data-key="news_title" style="color: green;">NEWS PUBLICATION</h2>
+            <div class="news-card" style="border-left: 10px solid pink;">
+                <h3 data-key="news_1">Flight Hour Project Update</h3>
+                <p data-key="news_1_text">Currently serving as Finance Team Lead, managing budget processes and leading the finance team[cite: 32].</p>
+            </div>
+        </section>
+    </main>
 
-  <div class="lang">
-    <button onclick="setTR()">TR</button>
-    <button onclick="setEN()">EN</button>
-  </div>
-</div>
+    <footer>
+        <div class="footer-content">
+            <p>📍 Üsküdar/ Istanbul | ✉️ info@semanurdursun.com | 📞 +90 5XX XXX XX XX</p>
+            <p>© 2026 Sema Nur Dursun Webdesign Student Project</p>
+        </div>
+    </footer>
 
-<h1 id="pageTitle" style="text-align:center; margin-top:50px;">
-Weekly Course Schedule
-</h1>
-
-<table class="schedule">
-  <tr>
-    <th id="thDay">Day</th>
-    <th id="thCourse">Course</th>
-    <th id="thTime">Time</th>
-  </tr>
-
-  <tr>
-    <td id="mon">Monday</td>
-    <td id="course1">Management and Organization</td>
-    <td>12:00–15:00</td>
-  </tr>
-
-  <tr>
-    <td id="tue1">Tuesday</td>
-    <td id="course2">Data Structure</td>
-    <td>09:00–12:00</td>
-  </tr>
-
-  <tr>
-    <td id="tue2">Tuesday</td>
-    <td id="course3">Management Information Systems</td>
-    <td>12:00–15:00</td>
-  </tr>
-
-  <tr>
-    <td id="tue3">Tuesday</td>
-    <td id="course4">Marketing Management</td>
-    <td>15:00–18:00</td>
-  </tr>
-
-  <tr>
-    <td id="wed">Wednesday</td>
-    <td id="course5">Business Process Analysis</td>
-    <td>12:00–15:00</td>
-  </tr>
-
-  <tr>
-    <td id="thu">Thursday</td>
-    <td id="course6">Web Design</td>
-    <td>09:00–12:00</td>
-  </tr>
-</table>
-
-<footer class="fixed-footer">
-  📍 Üsküdar / Istanbul &nbsp; ✉️ dursunnurstudent@gmail.com &nbsp; 📞 +90 555 038 22 47  
-  <br>© 2026 Sema Nur Dursun — MIS Student Project
-</footer>
-
-<button onclick="setTR()">TR</button>
-<button onclick="setEN()">EN</button>
+    <script src="lang.js"></script>
+</body>
+</html>
