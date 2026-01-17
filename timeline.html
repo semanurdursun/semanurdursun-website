@@ -5,29 +5,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="watermark-bg">
-    <header class="baby-blue-nav">
-        <div class="header-container">
-            <a href="index.html"><img src="NOREY LOGO.png" class="logo-img"></a>
-            <button id="lang-btn" class="pastel-btn">TR / EN</button>
-        </div>
-    </header>
-
     <main class="content-wrapper">
-        <h2 class="impact-header" style="color: #6E0D25;" data-key="nav_timeline">PROFESSIONAL TIMELINE</h2>
-        <div class="timeline-container">
-            <div style="display:none;"><input type="text" name="bot_check" id="bot_check"></div>
-            
-            <div class="timeline-item" style="border-left: 10px solid #B2D8B2;">
-                <h4 data-key="time_1">2023 - 2027 (Expected)</h4>
-                <p><b data-key="stat_eng">Statistical Engineering Focus</b></p>
-                <p>Management Information Systems, Istanbul Topkapı University. </p>
+        <section class="glass-card pastel-green-border">
+            <h2 class="impact-header" data-key="cv_header">CURRICULUM VITAE</h2>
+            <div class="cv-grid">
+                <div>
+                    <h3 data-key="skills_title">CERTIFICATIONS</h3>
+                    <ul class="georgia-body">
+                        <li>Introduction to Web Development (HTML, CSS, JS) </li>
+                        <li>Basic Python Programming Certificate </li>
+                        <li>Git & GitHub Fundamentals </li>
+                        <li>Aspire Leaders Program Certificate [cite: 38]</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-key="projects_title">PROJECTS</h3>
+                    <ul class="georgia-body">
+                        <li>Personal Portfolio Website (HTML/CSS/JS) </li>
+                        <li>Responsive CV Website (GitHub Pages) </li>
+                    </ul>
+                </div>
             </div>
-            <div class="timeline-item" style="border-left: 10px solid #6E0D25;">
-                <h4 data-key="time_2">Oct 2025 - Present</h4>
-                <p><b data-key="fin_lead">Finance Team Lead</b></p>
-                <p>Flight Hour Project (Uçuş Saati Projesi). </p>
+        </section>
+
+        <section class="glass-card pastel-orange-border">
+            <h2 class="impact-header" data-key="schedule_title">TIMELINE & SCHEDULE</h2>
+            <table class="schedule-table">
+                <tr class="table-head"><th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th></tr>
+                <tr class="pastel-green-bg"><td>09:00-12:00</td><td>-</td><td>Data Structure </td><td>-</td><td>Web Design </td></tr>
+                <tr class="pastel-orange-bg"><td>12:00-15:00</td><td>Management Org </td><td>MIS </td><td>Business Process Analysis </td><td>-</td></tr>
+                <tr class="pastel-pink-bg"><td>15:00-18:00</td><td>Sports </td><td>Marketing Mgmt </td><td>Artistic Activity </td><td>-</td></tr>
+            </table>
+
+            <div class="timeline-entries">
+                <div style="display:none;"><input type="text" id="spam_check"></div>
+                <div class="timeline-item">
+                    <h4 data-key="time_1">Oct 2025 - Present</h4>
+                    <p><b data-key="fin_lead">Finance Team Lead</b> - Flight Hour Project.</p>
+                    <p>Focus: Statistical Engineering & Budget Management.</p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <script src="lang.js"></script>
 </body>
