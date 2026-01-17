@@ -14,24 +14,34 @@
   </div>
 
   <div class="menu">
-    <a href="index.html" id="navHome">Home</a>
-    <a href="cv.html" id="navCV">CV</a>
-    <a href="timeline.html" id="navTimeline">Timeline</a>
-    <a href="contact.html" id="navContact">Contact</a>
+    <a href="index.html" data-key="navHome" class="active"></a>
+    <a href="cv.html" data-key="navCV"></a>
+    <a href="timeline.html" data-key="navTimeline"></a>
+    <a href="contact.html" data-key="navContact"></a>
   </div>
 
   <div class="lang">
-    <button onclick="setTR()">TR</button>
-    <button onclick="setEN()">EN</button>
+    <button onclick="setLang('tr')">TR</button>
+    <button onclick="setLang('en')">EN</button>
   </div>
 </div>
-  <h1 id="homeName">Sema Nur Dursun</h1>
-  <h2 id="homeTitle">Management Information Systems Student</h2>
-  <p id="homeDesc">
-    Second-year MIS student interested in web technologies, SEO, and digital systems.
-  </p>
-</section>
 
-<sec
+<main class="hero">
+
+  <h1 id="homeName">Sema Nur Dursun</h1>
+
+  <h2 data-key="homeTitle"></h2>
+
+  <p data-key="homeDesc"></p>
+
+</main>
+
+<footer class="fixed-footer">
+📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
+<br>© 2026 Sema Nur Dursun — MIS Student Project
+</footer>
 
 <script src="lang.js"></script>
+
+</body>
+</html>
