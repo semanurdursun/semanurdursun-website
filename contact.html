@@ -8,39 +8,82 @@
 
 <body>
 
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.png" width="50" alt="Logo">
+  </div>
 
-<div class="navbar">
-    <div class="logo">
-        <img src="logo.png" width="50">
+  <nav class="menu">
+    <a href="index.html" id="navHome">Home</a>
+    <a href="cv.html" id="navCV">CV</a>
+    <a href="timeline.html" id="navTimeline">Timeline</a>
+    <a href="contact.html" id="navContact" class="active">Contact</a>
+  </nav>
+
+  <div class="lang">
+    <button onclick="setTR()">TR</button>
+    <button onclick="setEN()">EN</button>
+  </div>
+</header>
+
+<main class="contact-container">
+
+  <section class="contact-hero">
+    <h1 id="pageTitle">Contact</h1>
+    <p id="contactSubtitle">
+      Feel free to get in touch for academic, project, or collaboration purposes.
+    </p>
+  </section>
+
+  <section class="contact-content">
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>📍 Üsküdar / Istanbul, Turkey</p>
+      <p>✉️ dursunnurstudent@gmail.com</p>
+      <p>📞 +90 555 038 22 47</p>
     </div>
 
-    <div class="menu">
-        <a href="index.html" id="navHome">Home</a>
-        <a href="cv.html" id="navCV">CV</a>
-        <a href="timeline.html" id="navTimeline">Timeline</a>
-        <a href="contact.html" id="navContact">Contact</a>
+    <div class="contact-form">
+      <h2>Contact Form</h2>
+
+      <form action="https://formsubmit.co/dursunnurstudent@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Contact Message">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="website" style="display:none">
+
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Interested In</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="interest[]" value="Academic Collaboration"> Academic Collaboration</label>
+          <label><input type="checkbox" name="interest[]" value="Project Work"> Project Work</label>
+          <label><input type="checkbox" name="interest[]" value="Volunteering"> Volunteering</label>
+        </div>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </div>
 
-    <div class="lang">
-        <button onclick="setTR()">TR</button>
-        <button onclick="setEN()">EN</button>
-    </div>
-</div>
+  </section>
 
-<h1 id="pageTitle">Contact</h1>
-
-<iframe class="map"
-  src="https://maps.google.com/maps?q=uskudar%20istanbul&output=embed">
-</iframe>
-
-<footer class="fixed-footer">
-📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
-<br>© 2026 Sema Nur Dursun — MIS Student Project
-</footer>
-
-<script src="lang.js"></script>
-
-</body>
-</html>
-
+  <section class="contact-map">
+    <iframe
+      src="https://maps.google.com/maps?q=uskudar%20istanbul&output=embed"
+      loading="lazy">
+    </iframe>
+  </section>
 
