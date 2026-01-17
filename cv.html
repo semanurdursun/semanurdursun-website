@@ -8,80 +8,83 @@
 
 <body>
 
-<header class="navbar">
+<div class="navbar">
   <div class="logo">
-    <img src="logo.png" width="50" alt="Logo">
+    <img src="logo.png" width="50">
   </div>
 
-  <nav class="menu">
-    <a href="index.html" id="navHome">Home</a>
-    <a href="cv.html" id="navCV" class="active">CV</a>
-    <a href="timeline.html" id="navTimeline">Timeline</a>
-    <a href="contact.html" id="navContact">Contact</a>
-  </nav>
+  <div class="menu">
+    <a href="index.html" data-key="navHome"></a>
+    <a href="cv.html" data-key="navCV" class="active"></a>
+    <a href="timeline.html" data-key="navTimeline"></a>
+    <a href="contact.html" data-key="navContact"></a>
+  </div>
 
   <div class="lang">
-    <button onclick="setTR()">TR</button>
-    <button onclick="setEN()">EN</button>
+    <button onclick="setLang('tr')">TR</button>
+    <button onclick="setLang('en')">EN</button>
   </div>
-</header>
+</div>
 
 <main class="cv-container">
 
   <section class="cv-hero">
     <h1>SEMA NUR DURSUN</h1>
-    <p>Management Information Systems Student</p>
-    <span>AI & Data Analytics Enthusiast</span>
+    <p data-key="cvSubtitle"></p>
+    <span data-key="cvFocus"></span>
   </section>
 
   <section class="cv-grid">
 
     <div class="cv-card wide">
-      <h2 id="profileTitle">Profile</h2>
-      <p id="profileText">
-        Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree
-        in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a
-        forward-thinking and solution-oriented leadership approach, aiming to create innovative and
-        sustainable system solutions.
-      </p>
+      <h2 data-key="profileTitle"></h2>
+      <p data-key="profileText"></p>
     </div>
 
     <div class="cv-card">
-      <h2 id="eduTitle">Education</h2>
-      <p>
-        <strong>Istanbul Topkapi University</strong><br>
-        B.Sc. Management Information Systems<br>
-        <span>2023 – Expected 2027</span>
-      </p>
+      <h2 data-key="eduTitle"></h2>
+      <p data-key="eduText"></p>
     </div>
 
     <div class="cv-card">
-      <h2 id="skillsTitle">Technical Skills</h2>
+      <h2 data-key="skillsTitle"></h2>
       <div class="chips">
         <span>HTML</span>
         <span>CSS</span>
         <span>JavaScript</span>
-        <span>Python (Beginner)</span>
-        <span>SQL (MSSQL)</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>SEO</span>
       </div>
     </div>
 
     <div class="cv-card">
-      <h2>Languages</h2>
+      <h2 data-key="langTitle"></h2>
       <ul class="language-list">
-        <li>English — B2 (Upper-Intermediate)</li>
-        <li>German — A1 (Beginner)</li>
-        <li>French — A1 (Beginner)</li>
+        <li data-key="lang1"></li>
+        <li data-key="lang2"></li>
+        <li data-key="lang3"></li>
       </ul>
     </div>
 
     <div class="cv-card wide">
-      <h2>Experience</h2>
+      <h2 data-key="expTitle"></h2>
       <ul class="experience-list">
-        <li>
-          <strong>Finance Team Lead — Flight Hour Project
-            <script src="lang.js"></script>
+        <li data-key="exp1"></li>
+        <li data-key="exp2"></li>
+      </ul>
+    </div>
 
+  </section>
 
+</main>
 
+<footer class="fixed-footer">
+📍 Üsküdar / Istanbul &nbsp; ✉️ mail@domain.com &nbsp; 📞 +90 5XX XXX XX XX  
+<br>© 2026 Sema Nur Dursun — MIS Student Project
+</footer>
 
+<script src="lang.js"></script>
+
+</body>
+</html>
