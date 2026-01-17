@@ -12,33 +12,34 @@
             <a href="index.html"><img src="NOREY LOGO.png" alt="NOREY Logo" class="logo-img"></a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" data-key="nav_home">Home</a></li>
-                    <li><a href="cv.html" data-key="nav_cv">CV</a></li>
-                    <li><a href="timeline.html" data-key="nav_timeline">Timeline</a></li>
-                    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+                    <li><a href="index.html" data-key="nav_home">HOME</a></li>
+                    <li><a href="timeline_cv.html" data-key="nav_timeline_cv">TIMELINE/CV</a></li>
+                    <li><a href="contact.html" data-key="nav_contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <button id="lang-btn" class="pastel-btn">TR / EN</button>
+            <div class="lang-controls">
+                <button onclick="setLanguage('tr')" class="cream-btn">Turkish</button>
+                <button onclick="setLanguage('en')" class="cream-btn">English</button>
+            </div>
         </div>
     </header>
 
     <main class="content-wrapper">
-        <section class="glass-card" style="border-top: 8px solid #FFB7B2;"> <h1 class="impact-header" data-key="profile_title">PROFILE INFO</h1>
-            <p class="georgia-body" data-key="cover_1">Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. </p>
-            <p class="georgia-body" data-key="cover_2">As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. </p>
+        <section class="glass-card pastel-pink-border">
+            <h1 class="impact-header" data-key="profile_title">PROFILE INFO</h1>
+            <p class="georgia-body" data-key="cover_p1">Driven by my passion for artificial intelligence and data analytics, I chose to pursue Management Information Systems[cite: 6]. As an Aspire Leaders Program graduate, I embrace a forward-thinking leadership approach[cite: 7].</p>
         </section>
 
-        <section class="news-container">
-            <h2 data-key="news_title" style="color: #6E0D25;">NEWS PUBLICATION</h2> <div class="news-item" style="background-color: #B2E2F2; padding: 15px; border-radius: 10px;">
-                <h3 data-key="news_1">Flight Hour Project Update</h3>
-                <p data-key="news_1_text">Leading the finance team and managing budget processes. </p>
-            </div>
+        <section class="glass-card pastel-burgundy-border">
+            <h2 class="impact-header" data-key="news_title">NEWS (GÜNCEL YAZILIM HABERLERİ)</h2>
+            <div id="news-feed">
+                </div>
         </section>
     </main>
 
-    <footer class="fixed-footer">
-        <p>📍 Üsküdar/ Istanbul | ✉️ dursunnurstudent@gmail.com | 📞 +90 555 038 22 47 </p>
-        <p>© 2026 Sema Nur Dursun Webdesign Student Project </p>
+    <footer class="fixed-info-bottom">
+        <p>📍 Üsküdar/ Istanbul | ✉️ dursunnurstudent@gmail.com | 📞 +90 555 038 22 47</p>
+        <p>© 2026 Sema Nur Dursun Webdesign Student Project</p>
     </footer>
     <script src="lang.js"></script>
 </body>
