@@ -1,1 +1,76 @@
-
+{
+  "news": [
+    {
+      "title_en": "AI Breakthrough: New Neural Network Architecture",
+      "title_tr": "Yapay Zeka Atılımı: Yeni Sinir Ağı Mimarisi",
+      "description_en": "Researchers have developed a revolutionary neural network architecture that achieves 40% better performance in natural language processing tasks while using 30% less computational power.",
+      "description_tr": "Araştırmacılar, doğal dil işleme görevlerinde %40 daha iyi performans elde eden ve %30 daha az hesaplama gücü kullanan devrim niteliğinde bir sinir ağı mimarisi geliştirdi.",
+      "date": "January 20, 2026",
+      "link": "https://www.nature.com/articles/ai"
+    },
+    {
+      "title_en": "Generative AI Transforms Healthcare Diagnostics",
+      "title_tr": "Üretken Yapay Zeka Sağlık Teşhislerini Dönüştürüyor",
+      "description_en": "A new AI system can now diagnose rare diseases with 95% accuracy by analyzing medical imaging and patient data, potentially saving thousands of lives annually.",
+      "description_tr": "Yeni bir yapay zeka sistemi, tıbbi görüntüleme ve hasta verilerini analiz ederek nadir hastalıkları %95 doğrulukla teşhis edebiliyor ve yıllık binlerce hayat kurtarma potansiyeline sahip.",
+      "date": "January 18, 2026",
+      "link": "https://www.science.org/healthcare-ai"
+    },
+    {
+      "title_en": "OpenAI Announces GPT-5: Next Generation Language Model",
+      "title_tr": "OpenAI GPT-5'i Duyurdu: Yeni Nesil Dil Modeli",
+      "description_en": "OpenAI has unveiled GPT-5, featuring enhanced reasoning capabilities, multimodal understanding, and significantly improved factual accuracy. The model will be available to enterprise customers next month.",
+      "description_tr": "OpenAI, gelişmiş akıl yürütme yetenekleri, çok modlu anlayış ve önemli ölçüde iyileştirilmiş gerçeklik doğruluğuna sahip GPT-5'i tanıttı. Model gelecek ay kurumsal müşterilere sunulacak.",
+      "date": "January 15, 2026",
+      "link": "https://openai.com/gpt5"
+    },
+    {
+      "title_en": "AI Ethics Framework Adopted by Tech Giants",
+      "title_tr": "Teknoloji Devleri Yapay Zeka Etik Çerçevesini Kabul Etti",
+      "description_en": "Major tech companies including Google, Microsoft, and Meta have jointly adopted a comprehensive AI ethics framework focusing on transparency, accountability, and user privacy protection.",
+      "description_tr": "Google, Microsoft ve Meta dahil büyük teknoloji şirketleri, şeffaflık, hesap verebilirlik ve kullanıcı gizliliği korumasına odaklanan kapsamlı bir yapay zeka etik çerçevesini ortaklaşa kabul etti.",
+      "date": "January 12, 2026",
+      "link": "https://www.technologyreview.com/ai-ethics"
+    },
+    {
+      "title_en": "Quantum Computing Accelerates AI Training",
+      "title_tr": "Kuantum Bilişim Yapay Zeka Eğitimini Hızlandırıyor",
+      "description_en": "IBM's latest quantum computer has successfully trained a large language model 100 times faster than traditional supercomputers, marking a significant milestone in AI development.",
+      "description_tr": "IBM'in en son kuantum bilgisayarı, geleneksel süper bilgisayarlardan 100 kat daha hızlı bir şekilde büyük bir dil modelini başarıyla eğitti ve yapay zeka gelişiminde önemli bir kilometre taşı işaretledi.",
+      "date": "January 10, 2026",
+      "link": "https://www.ibm.com/quantum-ai"
+    },
+    {
+      "title_en": "AI Assists in Climate Change Solutions",
+      "title_tr": "Yapay Zeka İklim Değişikliği Çözümlerine Yardımcı Oluyor",
+      "description_en": "Machine learning models are now helping scientists predict climate patterns with unprecedented accuracy, enabling better preparation for extreme weather events and long-term planning.",
+      "description_tr": "Makine öğrenimi modelleri artık bilim insanlarının iklim kalıplarını eşi görülmemiş bir doğrulukla tahmin etmelerine yardımcı olarak aşırı hava olaylarına daha iyi hazırlık ve uzun vadeli planlama sağlıyor.",
+      "date": "January 8, 2026",
+      "link": "https://www.climateai.org"
+    },
+    {
+      "title_en": "AI-Powered Education Platforms Revolutionize Learning",
+      "title_tr": "Yapay Zeka Destekli Eğitim Platformları Öğrenmeyi Devrim Niteliğinde Değiştiriyor",
+      "description_en": "New adaptive learning systems powered by AI are personalizing education for millions of students worldwide, improving learning outcomes by up to 60% according to recent studies.",
+      "description_tr": "Yapay zeka destekli yeni uyarlanabilir öğrenme sistemleri, dünya çapında milyonlarca öğrenci için eğitimi kişiselleştiriyor ve son araştırmalara göre öğrenme sonuçlarını %60'a kadar iyileştiriyor.",
+      "date": "January 5, 2026",
+      "link": "https://www.educationtech.com/ai-learning"
+    },
+    {
+      "title_en": "Autonomous AI Agents in Enterprise Software",
+      "title_tr": "Kurumsal Yazılımlarda Otonom Yapay Zeka Ajanları",
+      "description_en": "Companies are deploying autonomous AI agents that can handle complex business processes, from customer service to financial analysis, with minimal human intervention.",
+      "description_tr": "Şirketler, müşteri hizmetlerinden finansal analize kadar karmaşık iş süreçlerini minimum insan müdahalesi ile yönetebilen otonom yapay zeka ajanları dağıtıyor.",
+      "date": "January 3, 2026",
+      "link": "https://www.enterpriseai.news"
+    },
+    {
+      "title_en": "AI Breakthrough in Drug Discovery",
+      "title_tr": "İlaç Keşfinde Yapay Zeka Atılımı",
+      "description_en": "AI algorithms have identified promising new compounds for treating Alzheimer's disease, potentially reducing drug development time from 10 years to just 18 months.",
+      "description_tr": "Yapay zeka algoritmaları, Alzheimer hastalığını tedavi etmek için umut verici yeni bileşikler belirledi ve ilaç geliştirme süresini potansiyel olarak 10 yıldan sadece 18 aya düşürdü.",
+      "date": "January 1, 2026",
+      "link": "https://www.pharmaai.com"
+    }
+  ]
+}
