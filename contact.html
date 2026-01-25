@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sema Nur Dursun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/NOREY LOGO.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="logo-circle" style="display:none;">SN</div>
+                <span>Sema Nur Dursun</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="timeline.html">Schedule</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="index.html#news">News</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-display">EN</span></div>
+        </div>
+    </header>
 
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1 data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</h1>
+            <p data-en="I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out." data-tr="Sizden haber almak isterim! Bir sorunuz varsa, işbirliği yapmak istiyorsanız veya sadece merhaba demek istiyorsanız, lütfen iletişime geçin.">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-form-section">
+                <h2 data-en="📧 Send me a message" data-tr="📧 Bana mesaj gönderin">📧 Send me a message</h2>
+                
+                <div class="form-container" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-en="Your Name *" data-tr="Adınız *">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-en="Your Email *" data-tr="E-postanız *">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject *" data-tr="Konu *">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-en="Message *" data-tr="Mesajınız *">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <h4 data-en="I'm interested in:" data-tr="İlgilendiğim konular:">I'm interested in:</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest" value="collaboration">
+                            <span data-en="Collaboration Opportunities" data-tr="İşbirliği Fırsatları">Collaboration Opportunities</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest" value="projects">
+                            <span data-en="Project Discussions" data-tr="Proje Görüşmeleri">Project Discussions</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest" value="networking">
+                            <span data-en="Professional Networking" data-tr="Profesyonel Ağ Oluşturma">Professional Networking</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest" value="mentorship">
+                            <span data-en="Mentorship" data-tr="Mentorluk">Mentorship</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="interest" value="other">
+                            <span data-en="Other" data-tr="Diğer">Other</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label required-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span data-en="I agree to the privacy policy and understand that my data will be processed. *" data-tr="Gizlilik politikasını kabul ediyorum ve verilerimin işleneceğini anlıyorum. *">I agree to the privacy policy and understand that my data will be processed. *</span>
+                        </label>
+                    </div>
+
+                    <div class="spam-protection">
+                        <label for="honeypot" style="display:none;">Leave this field empty</label>
+                        <input type="text" id="honeypot" name="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
+                        
+                        <div class="captcha-box">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="captcha" name="captcha" required>
+                                <span data-en="I'm not a robot 🤖" data-tr="Robot değilim 🤖">I'm not a robot 🤖</span>
+                            </label>
+                            <div class="spam-shield" data-en="🔒 Spam Protection Active" data-tr="🔒 Spam Koruması Aktif">🔒 Spam Protection Active</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" onclick="handleSubmit(event)">
+                        <span data-en="Send Message" data-tr="Mesaj Gönder">Send Message</span> ✉️
+                    </button>
+
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+
+            <div class="contact-info-section">
+                <h2 data-en="📍 Contact Information" data-tr="📍 İletişim Bilgileri">📍 Contact Information</h2>
+                
+                <div class="info-cards">
+                    <div class="contact-info-card">
+                        <div class="info-icon">📧</div>
+                        <h3 data-en="Email" data-tr="E-posta">Email</h3>
+                        <p><a href="mailto:dursunnurstudent@gmail.com">dursunnurstudent@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📱</div>
+                        <h3 data-en="Phone" data-tr="Telefon">Phone</h3>
+                        <p><a href="tel:+905550382247">+90 555 038 22 47</a></p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">📍</div>
+                        <h3 data-en="Location" data-tr="Konum">Location</h3>
+                        <p>Istanbul, Turkey</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">🎓</div>
+                        <h3 data-en="University" data-tr="Üniversite">University</h3>
+                        <p>Istanbul Topkapı University</p>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3 data-en="🗺️ Find Me" data-tr="🗺️ Beni Bulun">🗺️ Find Me</h3>
+                    <div class="iframe-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d28.68252654460452!3d41.00537174230819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890123!5m2!1sen!2str" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="additional-iframe">
+                    <h3 data-en="🌟 My University" data-tr="🌟 Üniversitem">🌟 My University</h3>
+                    <div class="iframe-container">
+                        <iframe 
+                            src="https://www.topkapi.edu.tr/" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 15px;" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sema Nur Dursun. All rights reserved.</p>
+        <p data-en="Built with passion for AI and innovation 🚀" data-tr="Yapay zeka ve inovasyon tutkusuyla yapıldı 🚀">Built with passion for AI and innovation 🚀</p>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const honeypot = document.getElementById('honeypot').value;
+            const captcha = document.getElementById('captcha').checked;
+            const privacy = document.getElementById('privacy').checked;
+            
+            // Spam protection - honeypot
+            if (honeypot !== '') {
+                alert('Spam detected!');
+                return false;
+            }
+            
+            // Validate captcha
+            if (!captcha) {
+                showMessage('Please confirm you are not a robot.', 'error');
+                return false;
+            }
+            
+            // Validate privacy
+            if (!privacy) {
+                showMessage('Please accept the privacy policy.', 'error');
+                return false;
+            }
+            
+            // Validate fields
+            if (!name || !email || !subject || !message) {
+                showMessage('Please fill all required fields.', 'error');
+                return false;
+            }
+            
+            // Get selected interests
+            const interests = [];
+            document.querySelectorAll('input[name="interest"]:checked').forEach(checkbox => {
+                interests.push(checkbox.value);
+            });
+            
+            // Create email body
+            const emailBody = `
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Interests: ${interests.join(', ') || 'None selected'}
+
+Message:
+${message}
+            `;
+            
+            // Send email using mailto (opens email client)
+            const mailtoLink = `mailto:dursunnurstudent@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            window.location.href = mailtoLink;
+            
+            showMessage('Opening your email client... Please send the email to complete your message.', 'success');
+            
+            
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+            }, 2000);
+            
+            return false;
+        }
+        
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.textContent = message;
+            messageDiv.className = `form-message ${type}`;
+            messageDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
