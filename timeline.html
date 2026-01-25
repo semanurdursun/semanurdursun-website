@@ -1,2 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline & Schedule</title>
+  <style>
+    body {
+      background: #fcf8e3;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fbe4d8;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 15px;
+    }
+    .timeline {
+      margin: 40px;
+      border-left: 4px solid #90ee90;
+      padding-left: 20px;
+    }
+    .timeline div {
+      margin-bottom: 20px;
+      background-color: #fffaf2;
+      border-radius: 6px;
+      padding: 10px 15px;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    th, td {
+      border: 1px solid #ffd6a5;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #fff3cd;
+    }
+    form {
+      background-color: #fde2e4;
+      margin: 30px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 120px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p><strong>Sema Nur Dursun</strong></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+    </nav>
+  </header>
+
+  <section class="timeline">
+    <h2>Timeline</h2>
+    <div><strong>2021–2022:</strong> LÖSEV - Volunteer Work</div>
+    <div><strong>2023–2027:</strong> MIS Student at Istanbul Topkapı University</div>
+    <div><strong>2025:</strong> Aspire Leaders Program Graduate</div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">Ders & Etkinlik Programı</h2>
+    <table>
+      <tr>
+        <th>Gün</th><th>Ders / Etkinlik</th><th>Saat</th>
+      </tr>
+      <tr><td>Pazartesi</td><td>Python 101</td><td>09:00 - 11:00</td></tr>
+      <tr><td>Salı</td><td>Veritabanı Yönetimi</td><td>11:00 - 13:00</td></tr>
+      <tr><td>Çarşamba</td><td>Spor Faaliyeti</td><td>15:00 - 17:00</td></tr>
+      <tr><td>Perşembe</td><td>Sanatsal Etkinlik</td><td>14:00 - 16:00</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">İletişim Formu</h2>
+    <form onsubmit="return sendEmail()">
+      <label>Ad Soyad:</label><br>
+      <input type="text" id="name" required><br><br>
+      <label>Mail:</label><br>
+      <input type="email" id="email" required><br><br>
+      <label>Faaliyet ilgisi:</label><br>
+      <input type="checkbox" name="activity" value="spor"> Spor
+      <input type="checkbox" name="activity" value="sanat"> Sanat
+      <input type="checkbox" name="activity" value="teknoloji"> Teknoloji<br><br>
+
+      <label>Spam Doğrulama: 3 + 2 = ?</label><br>
+      <input type="text" id="captcha" required><br><br>
+
+      <input type="submit" value="Gönder">
+      <iframe src="https://www.topkapi.edu.tr"></iframe>
+    </form>
+  </section>
+
+  <section>
+    <h2 style="text-align:center;">News & Publications</h2>
+    <div class="timeline">
+      <div><strong>2025:</strong> Article Published on "AI in Education"</div>
+      <div><strong>2024:</strong> University Magazine Interview</div>
+    </div>
+  </section>
+
+  <script>
+    function sendEmail() {
+      const captcha = document.getElementById('captcha').value;
+      if (captcha != 5) {
+        alert("Spam kontrolü başarısız. Lütfen doğru cevabı girin.");
+        return false;
+      }
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      window.location.href = `mailto:dursunnurstudent@gmail.com?subject=Form Mesajı&body=İsim:${name}%0AEmail:${email}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
 
            
