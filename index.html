@@ -1,128 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sema Nur Dursun | Portfolio</title>
-  <link rel="icon" href="assets/NOREY LOGO.png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/NOREY LOGO.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 
 <body>
+  <!-- Üst Menü -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="assets/NOREY LOGO.png" alt="NOREY Logo" class="nav-logo">
+      </a>
+    </div>
 
-  <header id="home">
-    <nav>
-      <img src="assets/NOREY LOGO.png" alt="Norey Logo" class="logo" />
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav-center">
+      <a href="index.html" data-lang="home">Ana Sayfa</a>
+      <a href="cv.html" data-lang="cv">CV</a>
+      <a href="timeline.html" data-lang="timeline">Zaman Çizelgesi</a>
+      <a href="contact.html" data-lang="contact">İletişim</a>
+      <a href="news.html" data-lang="news">Haberler</a>
     </nav>
 
-    <div class="hero">
-      <h1>Sema Nur Dursun</h1>
-      <p>Management Information Systems Student | Data & AI Enthusiast</p>
-      <a href="#contact" class="btn">Get in touch</a>
+    <div class="nav-right">
+      <button class="lang-btn" onclick="switchLang('tr')">🇹🇷</button>
+      <button class="lang-btn" onclick="switchLang('en')">🇬🇧</button>
     </div>
   </header>
 
-  <section id="about">
-    <h2>Profile Info</h2>
-    <p>
-      Driven by my passion for artificial intelligence and data analytics, I pursue MIS
-      to merge technical expertise with leadership impact, aiming to build sustainable
-      digital transformation projects.
-    </p>
-
-    <div class="info-grid">
-      <div><strong>Location:</strong> Istanbul, Turkey</div>
-      <div><strong>Email:</strong> dursunnurstudent@gmail.com</div>
-      <div><strong>Phone:</strong> +90 555 038 22 47</div>
-    </div>
+  <!-- Hero Bölümü -->
+  <section class="hero">
+    <h1>Sema Nur Dursun</h1>
+    <p>Management Information Systems Student | Data & AI Enthusiast</p>
+    <a href="cv.html" class="btn-primary" data-lang="explore">CV’mi Gör</a>
   </section>
 
- 
-  <section id="timeline">
-    <h2>Education & Experience</h2>
-
-    <div class="timeline">
-      <div class="card">
-        <h3>Istanbul Topkapı University</h3>
-        <p>B.Sc. Management Information Systems (2023 – 2027 Expected)</p>
-      </div>
-
-      <div class="card">
-        <h3>Student Assistant</h3>
-        <p>Communication Office – Istanbul Topkapı University (June–July 2024)</p>
-      </div>
-
-      <div class="card">
-        <h3>Finance Team Lead – Flight Hour Project</h3>
-        <p>Leading the finance team and budget management (Oct 2025 – Present)</p>
-      </div>
-
-      <div class="card">
-        <h3>Communication Intern – Gökçeada Municipality</h3>
-        <p>20‑day internship focused on social media development.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="skills">
-    <h2>Technical & Soft Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python (Beginner), SQL (MSSQL), HTML/CSS (Basic)</li>
-      <li><strong>Databases:</strong> Microsoft SQL Server</li>
-      <li><strong>Problem Solving & Teamwork:</strong> Analytical and collaborative</li>
-      <li><strong>Languages:</strong> English (B2), German (A1), French (A1)</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <label>Name</label>
-      <input type="text" name="name" required />
-      <label>Email</label>
-      <input type="email" name="email" required />
-      <label>Message</label>
-      <textarea name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12046.116102118516!2d28.950903!3d41.01384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9908b3f0b05%3A0x22a6adbc2e09350e!2sIstanbul!5e0!3m2!1sen!2str!4v0000"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </div>
-  </section>
-
-
+  <!-- Alt Bilgi -->
   <footer>
-    <p>© 2024 Sema Nur Dursun | Designed with NOREY Theme</p>
+    <p>© 2024 Sema Nur Dursun | Designed with NOREY</p>
   </footer>
-
-
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const email = this.email.value;
-      if (email.includes("spam")) {
-        alert("Spam detected! Message not sent.");
-        return;
-      }
-      alert("Thank you! Your message has been received.");
-      this.reset();
-    });
-  </script>
 </body>
 </html>
+
 
    
    
