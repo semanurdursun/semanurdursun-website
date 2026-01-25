@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sema Nur Dursun | Portfolio</title>
-  <link rel="icon" href="assets/NOREY LOGO.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="lang.js" defer></script>
+<meta charset="UTF-8">
+<title>Sema Nur Dursun | Home</title>
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
-
 <body>
-  <!-- Üst Menü -->
-  <header class="navbar">
-    <div class="nav-left">
-      <a href="index.html">
-        <img src="assets/NOREY LOGO.png" alt="NOREY Logo" class="nav-logo">
-      </a>
-    </div>
 
-    <nav class="nav-center">
-      <a href="index.html" data-lang="home">Ana Sayfa</a>
-      <a href="cv.html" data-lang="cv">CV</a>
-      <a href="timeline.html" data-lang="timeline">Zaman Çizelgesi</a>
-      <a href="contact.html" data-lang="contact">İletişim</a>
-      <a href="news.html" data-lang="news">Haberler</a>
-    </nav>
+<header>
+  <div class="logo"><img src="assets/NOREY LOGO.png" alt="Logo"></div>
+  <nav>
+    <div class="nav-item" data-lang="home"><a href="index.html">Home</a></div>
+    <div class="nav-item" data-lang="cv"><a href="timeline.html">CV / Schedule</a></div>
+  </nav>
+  <button onclick="switchLang('tr')">TR</button>
+  <button onclick="switchLang('en')">EN</button>
+</header>
 
-    <div class="nav-right">
-      <button class="lang-btn" onclick="switchLang('tr')">🇹🇷</button>
-      <button class="lang-btn" onclick="switchLang('en')">🇬🇧</button>
-    </div>
-  </header>
+<div class="main">
+  <div class="about-box">
+     <h1>Sema Nur Dursun</h1>
+     <p data-lang="intro">
+       Management Information Systems student. Passionate about AI and data analytics. 
+       Seeking innovative solutions combining technology and leadership.
+     </p>
+  </div>
+</div>
 
-  <!-- Hero Bölümü -->
-  <section class="hero">
-    <h1>Sema Nur Dursun</h1>
-    <p>Management Information Systems Student | Data & AI Enthusiast</p>
-    <a href="cv.html" class="btn-primary" data-lang="explore">CV’mi Gör</a>
-  </section>
-
-  <!-- Alt Bilgi -->
-  <footer>
-    <p>© 2024 Sema Nur Dursun | Designed with NOREY</p>
-  </footer>
+<footer>© 2024 Sema Nur Dursun | NOREY Design</footer>
 </body>
 </html>
-
 
    
    
