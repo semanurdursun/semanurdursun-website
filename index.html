@@ -1,209 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SEMA NUR DURSUN | CV</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #0a0a23;
-      background: linear-gradient(120deg, #e6f3ff, #f3f8ff);
-      overflow-x: hidden;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-      background-color: rgba(255,255,255,0.9);
-      box-shadow: 0px 3px 8px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header img {
-      height: 45px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #1f2d4d;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: #007cff; }
-
-    .background-logo {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%) rotate(0deg);
-      opacity: 0.08;
-      width: 500px;
-      animation: spin 60s infinite linear;
-      z-index: 0;
-    }
-
-    @keyframes spin {
-      from {transform: translate(-50%,-50%) rotate(0deg);}
-      to {transform: translate(-50%,-50%) rotate(360deg);}
-    }
-
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      padding: 40px 80px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .left, .right {
-      flex: 1 1 450px;
-      margin: 20px;
-      background-color: rgba(255,255,255,0.9);
-      border-radius: 10px;
-      padding: 25px 30px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      border-bottom: 2px solid #007cff;
-      padding-bottom: 5px;
-      color: #004080;
-      font-size: 20px;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 20px;
-      line-height: 1.6;
-    }
-
-    .profile {
-      font-size: 15px;
-      color: #333;
-    }
-
-    .experience-item {
-      margin-bottom: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
-      border-top: 1px solid #ddd;
-    }
-
-    a {
-      color: #004080;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sema Nur Dursun | Portfolio</title>
+  <link rel="icon" href="assets/NOREY LOGO.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header>
-    <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+  <header id="home">
     <nav>
+      <img src="assets/NOREY LOGO.png" alt="Norey Logo" class="logo" />
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="hero">
+      <h1>Sema Nur Dursun</h1>
+      <p>Management Information Systems Student | Data & AI Enthusiast</p>
+      <a href="#contact" class="btn">Get in touch</a>
+    </div>
   </header>
 
-  <img src="assets/NOREY LOGO.png" class="background-logo" alt="Background Logo">
+  <section id="about">
+    <h2>Profile Info</h2>
+    <p>
+      Driven by my passion for artificial intelligence and data analytics, I pursue MIS
+      to merge technical expertise with leadership impact, aiming to build sustainable
+      digital transformation projects.
+    </p>
 
-  <div class="container">
-    <!-- Left Section -->
-    <div class="left">
-      <h2>PROFILE INFO</h2>
-      <div class="profile">
-        <p><strong>Name:</strong> Sema Nur Dursun</p>
-        <p><strong>Location:</strong> Istanbul, Turkey</p>
-        <p><strong>Email:</strong> <a href="mailto:dursunnurstudent@gmail.com">dursunnurstudent@gmail.com</a></p>
-        <p><strong>Phone:</strong> +90 555 038 22 47</p>
-        <p>Driven by my passion for artificial intelligence and data analytics, 
-        I pursue MIS to merge technical expertise with leadership impact, aiming to 
-        build sustainable digital transformation projects.</p>
-      </div>
-
-      <h2>EDUCATION</h2>
-      <ul>
-        <li><strong>B.Sc. Management Information Systems</strong><br>
-        Istanbul Topkapı University (2023 – 2027, Expected)</li>
-        <li>High School Education: En Eğitim High School (2021 – 2022)</li>
-      </ul>
-
-      <h2>LANGUAGES</h2>
-      <ul>
-        <li>English — B2 (Upper‑Intermediate)</li>
-        <li>German — A1 (Beginner)</li>
-        <li>French — A1 (Beginner)</li>
-      </ul>
-
-      <h2>CERTIFICATIONS</h2>
-      <ul>
-        <li>Aspire Leaders Program — Aspire Institute (Oct 2025)</li>
-        <li>SQL Server Training — Lions Academy</li>
-        <li>LÖSEV Volunteer (since 2021)</li>
-      </ul>
+    <div class="info-grid">
+      <div><strong>Location:</strong> Istanbul, Turkey</div>
+      <div><strong>Email:</strong> dursunnurstudent@gmail.com</div>
+      <div><strong>Phone:</strong> +90 555 038 22 47</div>
     </div>
+  </section>
 
-    <!-- Right Section -->
-    <div class="right">
-      <h2>EXPERIENCE</h2>
-      <div class="experience-item">
-        <strong>Student Assistant – Communication Office</strong><br>
-        Istanbul Topkapı University | June 2024 – July 2024<br>
-        <em>Supported university promotion and communication events.</em>
-      </div>
-      <div class="experience-item">
-        <strong>Finance Team Lead – Flight Hour Project</strong><br>
-        Oct 2025 – Present<br>
-        <em>Leading the finance team and budget management.</em>
-      </div>
-      <div class="experience-item">
-        <strong>Communication Intern – Gökçeada Municipality</strong><br>
-        <em>Contributed to social media strategy and online outreach.</em>
-      </div>
-      <div class="experience-item">
-        <strong>Packaging Assistant (Volunteer)</strong><br>
-        LÖSEV Foundation | Assisted with operations for children leukemia awareness.
+ 
+  <section id="timeline">
+    <h2>Education & Experience</h2>
+
+    <div class="timeline">
+      <div class="card">
+        <h3>Istanbul Topkapı University</h3>
+        <p>B.Sc. Management Information Systems (2023 – 2027 Expected)</p>
       </div>
 
-      <h2>SKILLS</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python (Beginner), SQL (MSSQL), HTML/CSS (Basic)</li>
-        <li><strong>Databases:</strong> Microsoft SQL Server (Basic)</li>
-        <li><strong>Web Development:</strong> HTML, CSS</li>
-        <li><strong>Soft Skills:</strong> Problem-solving, Stress Resilience, Team Collaboration</li>
-      </ul>
+      <div class="card">
+        <h3>Student Assistant</h3>
+        <p>Communication Office – Istanbul Topkapı University (June–July 2024)</p>
+      </div>
 
-      <h2>REFERENCE</h2>
-      <p><strong>Engin Hengirmen</strong><br>
-      Academic Advisor, MIS Department<br>
-      Istanbul Topkapı University<br>
-      <a href="mailto:enginhengirmen@topkapi.edu.tr">enginhengirmen@topkapi.edu.tr</a></p>
+      <div class="card">
+        <h3>Finance Team Lead – Flight Hour Project</h3>
+        <p>Leading the finance team and budget management (Oct 2025 – Present)</p>
+      </div>
+
+      <div class="card">
+        <h3>Communication Intern – Gökçeada Municipality</h3>
+        <p>20‑day internship focused on social media development.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <footer>© 2024 Sema Nur Dursun | Designed with NOREY Theme</footer>
+
+  <section id="skills">
+    <h2>Technical & Soft Skills</h2>
+    <ul>
+      <li><strong>Programming:</strong> Python (Beginner), SQL (MSSQL), HTML/CSS (Basic)</li>
+      <li><strong>Databases:</strong> Microsoft SQL Server</li>
+      <li><strong>Problem Solving & Teamwork:</strong> Analytical and collaborative</li>
+      <li><strong>Languages:</strong> English (B2), German (A1), French (A1)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label>Name</label>
+      <input type="text" name="name" required />
+      <label>Email</label>
+      <input type="email" name="email" required />
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12046.116102118516!2d28.950903!3d41.01384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9908b3f0b05%3A0x22a6adbc2e09350e!2sIstanbul!5e0!3m2!1sen!2str!4v0000"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2024 Sema Nur Dursun | Designed with NOREY Theme</p>
+  </footer>
+
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = this.email.value;
+      if (email.includes("spam")) {
+        alert("Spam detected! Message not sent.");
+        return;
+      }
+      alert("Thank you! Your message has been received.");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
+
+   
+   
+  
+     
+
+     
+     
+     
+      
