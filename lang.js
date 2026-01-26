@@ -1,4 +1,4 @@
-// Language switcher functionality
+
 let currentLang = 'tr'; // Default language is Turkish
 
 function toggleLanguage() {
