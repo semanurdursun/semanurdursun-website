@@ -1,52 +1,70 @@
 {
   "news": [
     {
-      "date": "26 Ocak 2026",
+      "id": "ai-future",
+      "date_tr": "26 Ocak 2026",
+      "date_en": "January 26, 2026",
       "title_tr": "Yapay Zeka ve Geleceğimiz",
       "title_en": "Artificial Intelligence and Our Future",
       "description_tr": "Yapay zeka teknolojileri, günlük yaşamımızı ve iş dünyasını hızla dönüştürüyor. Makine öğrenimi ve derin öğrenme algoritmaları, veri analizinden sağlık hizmetlerine kadar birçok alanda devrim yaratıyor.",
       "description_en": "Artificial intelligence technologies are rapidly transforming our daily lives and business world. Machine learning and deep learning algorithms are revolutionizing many fields from data analysis to healthcare.",
-      "link": ""
+      "content_tr": "Yapay zeka (AI), 21. yüzyılın en önemli teknolojik gelişmelerinden biri olarak karşımıza çıkıyor. Makine öğrenimi ve derin öğrenme algoritmaları sayesinde bilgisayarlar artık insan benzeri görevleri yerine getirebiliyor. Sağlık sektöründe hastalık teşhisi, finans sektöründe risk analizi, e-ticarette kişiselleştirilmiş öneriler ve otonom araçlar gibi pek çok alanda AI kullanımı hızla artıyor. Ancak bu gelişmeler beraberinde etik soruları da getiriyor. Veri gizliliği, algoritmik önyargı ve iş gücü üzerindeki etkileri tartışılması gereken önemli konular arasında. Gelecekte AI'ın toplum üzerindeki etkisini anlamak ve yönlendirmek için interdisipliner bir yaklaşıma ihtiyaç var.",
+      "content_en": "Artificial Intelligence (AI) emerges as one of the most significant technological developments of the 21st century. Thanks to machine learning and deep learning algorithms, computers can now perform human-like tasks. AI usage is rapidly increasing in many areas such as disease diagnosis in healthcare, risk analysis in finance, personalized recommendations in e-commerce, and autonomous vehicles. However, these developments also bring ethical questions. Data privacy, algorithmic bias, and impacts on the workforce are among the important issues that need to be discussed. In the future, we need an interdisciplinary approach to understand and guide AI's impact on society."
     },
     {
-      "date": "20 Ocak 2026",
+      "id": "data-science",
+      "date_tr": "20 Ocak 2026",
+      "date_en": "January 20, 2026",
       "title_tr": "Veri Bilimi ve İş Dünyası",
       "title_en": "Data Science and Business",
       "description_tr": "Veri bilimi, modern işletmelerin rekabet avantajı elde etmelerinde kritik rol oynuyor. Büyük veri analitiği ile şirketler, müşteri davranışlarını daha iyi anlayabiliyor ve stratejik kararlar alabiliyor.",
       "description_en": "Data science plays a critical role in helping modern businesses gain competitive advantage. With big data analytics, companies can better understand customer behavior and make strategic decisions.",
-      "link": ""
+      "content_tr": "Veri bilimi, günümüz iş dünyasında vazgeçilmez bir araç haline geldi. Şirketler, büyük veri analitiği kullanarak müşteri davranışlarını tahmin edebiliyor, operasyonel verimliliği artırabiliyor ve yeni iş fırsatları keşfedebiliyor. Veri bilimciler, istatistik, matematik ve programlama becerilerini kullanarak ham veriden değerli içgörüler çıkarıyor. Python, R ve SQL gibi araçlar, veri analizi için standart haline geldi. Makine öğrenimi modelleri, satış tahminlerinden fraud tespitine kadar geniş bir yelpazede kullanılıyor. İşletmeler için veri odaklı karar verme süreci, rekabet avantajı sağlamanın en önemli yollarından biri.",
+      "content_en": "Data science has become an indispensable tool in today's business world. Companies can predict customer behavior, increase operational efficiency, and discover new business opportunities using big data analytics. Data scientists extract valuable insights from raw data using statistics, mathematics, and programming skills. Tools like Python, R, and SQL have become standard for data analysis. Machine learning models are used in a wide range from sales forecasting to fraud detection. For businesses, data-driven decision-making is one of the most important ways to gain competitive advantage."
     },
     {
-      "date": "15 Ocak 2026",
+      "id": "mis-trends",
+      "date_tr": "15 Ocak 2026",
+      "date_en": "January 15, 2026",
       "title_tr": "Yönetim Bilişim Sistemlerinde Yeni Trendler",
       "title_en": "New Trends in Management Information Systems",
       "description_tr": "Bulut bilişim, yapay zeka ve otomasyon, yönetim bilişim sistemlerini yeniden şekillendiriyor. Dijital dönüşüm, kurumsal süreçlerin modernizasyonunda önemli fırsatlar sunuyor.",
       "description_en": "Cloud computing, artificial intelligence and automation are reshaping management information systems. Digital transformation offers significant opportunities in modernizing organizational processes.",
-      "link": ""
+      "content_tr": "Yönetim Bilişim Sistemleri (MIS), dijital çağda işletmelerin kalbi haline geldi. Bulut bilişim, şirketlerin IT altyapısını daha esnek ve ölçeklenebilir hale getiriyor. Yapay zeka ve otomasyon, rutin görevleri otomatikleştirerek çalışanların daha stratejik işlere odaklanmasını sağlıyor. ERP, CRM ve SCM gibi kurumsal sistemler, farklı departmanlar arasında veri akışını kolaylaştırıyor. Siber güvenlik, artan dijitalleşme ile birlikte kritik bir öneme sahip. Blockchain teknolojisi, veri güvenliği ve şeffaflık açısından yeni olanaklar sunuyor. Gelecekte, nesnelerin interneti (IoT) ve edge computing gibi teknolojiler MIS'in evrimini şekillendirmeye devam edecek.",
+      "content_en": "Management Information Systems (MIS) has become the heart of businesses in the digital age. Cloud computing makes companies' IT infrastructure more flexible and scalable. Artificial intelligence and automation automate routine tasks, allowing employees to focus on more strategic work. Enterprise systems like ERP, CRM, and SCM facilitate data flow between different departments. Cybersecurity is critically important with increasing digitalization. Blockchain technology offers new possibilities in terms of data security and transparency. In the future, technologies like the Internet of Things (IoT) and edge computing will continue to shape the evolution of MIS."
     },
     {
-      "date": "10 Ocak 2026",
+      "id": "chatgpt-ai",
+      "date_tr": "10 Ocak 2026",
+      "date_en": "January 10, 2026",
       "title_tr": "ChatGPT ve Üretken Yapay Zeka",
       "title_en": "ChatGPT and Generative AI",
       "description_tr": "Üretken yapay zeka modelleri, içerik üretiminden kod yazmaya kadar birçok alanda kullanılıyor. ChatGPT gibi dil modelleri, iş süreçlerini optimize etmek ve yaratıcılığı artırmak için güçlü araçlar sunuyor.",
       "description_en": "Generative AI models are being used in many areas from content creation to code writing. Language models like ChatGPT offer powerful tools to optimize business processes and enhance creativity.",
-      "link": ""
+      "content_tr": "ChatGPT ve benzeri üretken yapay zeka modelleri, 2022'den bu yana teknoloji dünyasında devrim yarattı. Bu büyük dil modelleri (LLM), doğal dil işleme konusunda önceki sistemlerin çok ötesinde yetenekler sergiliyor. İçerik yazımı, kod geliştirme, müşteri hizmetleri, eğitim ve araştırma gibi alanlarda kullanılıyor. GPT-4, Claude, Gemini gibi modeller, karmaşık soruları anlayabiliyor ve bağlama uygun yanıtlar üretebiliyor. Ancak halüsinasyon problemi, telif hakları ve etik kullanım gibi konular hala tartışılıyor. Şirketler, üretken AI'ı iş süreçlerine entegre ederek verimlilik artışı sağlıyor. Gelecekte, multimodal modeller (metin, görsel, ses) daha da yaygınlaşacak.",
+      "content_en": "ChatGPT and similar generative AI models have revolutionized the tech world since 2022. These large language models (LLMs) demonstrate capabilities far beyond previous systems in natural language processing. They are used in areas such as content writing, code development, customer service, education, and research. Models like GPT-4, Claude, and Gemini can understand complex questions and generate context-appropriate responses. However, issues like the hallucination problem, copyright, and ethical use are still being discussed. Companies are achieving efficiency gains by integrating generative AI into business processes. In the future, multimodal models (text, image, audio) will become even more widespread."
     },
     {
-      "date": "5 Ocak 2026",
+      "id": "cybersecurity",
+      "date_tr": "5 Ocak 2026",
+      "date_en": "January 5, 2026",
       "title_tr": "Siber Güvenlik ve Veri Koruma",
       "title_en": "Cybersecurity and Data Protection",
       "description_tr": "Dijital dönüşümle birlikte siber güvenlik tehditleri artıyor. Kurumlar, hassas verileri korumak ve güvenlik açıklarını minimize etmek için gelişmiş güvenlik stratejileri geliştirmeli.",
       "description_en": "Cybersecurity threats are increasing with digital transformation. Organizations must develop advanced security strategies to protect sensitive data and minimize vulnerabilities.",
-      "link": ""
+      "content_tr": "Siber güvenlik, dijital çağın en kritik konularından biri haline geldi. Ransomware saldırıları, veri ihlalleri, phishing ve DDoS saldırıları gibi tehditler sürekli evriliyor. Şirketler, GDPR, KVKK gibi veri koruma yasalarına uymak zorunda. Zero-trust güvenlik modeli, perimeter güvenliğinin yerini alıyor. Çok faktörlü kimlik doğrulama (MFA), şifreleme ve düzenli güvenlik denetimleri temel önlemler arasında. Yapay zeka, hem siber saldırılarda hem de savunmada kullanılıyor. SOC (Security Operations Center) ekipleri, 7/24 tehditleri izliyor. Siber güvenlik uzmanlarına olan talep her geçen gün artıyor. Gelecekte, kuantum bilgisayarların mevcut şifreleme yöntemlerini tehdit etmesi bekleniyor.",
+      "content_en": "Cybersecurity has become one of the most critical issues of the digital age. Threats like ransomware attacks, data breaches, phishing, and DDoS attacks are constantly evolving. Companies must comply with data protection laws like GDPR and KVKK. The zero-trust security model is replacing perimeter security. Multi-factor authentication (MFA), encryption, and regular security audits are among basic measures. Artificial intelligence is used in both cyber attacks and defense. SOC (Security Operations Center) teams monitor threats 24/7. The demand for cybersecurity professionals is increasing every day. In the future, quantum computers are expected to threaten current encryption methods."
     },
     {
-      "date": "1 Ocak 2026",
+      "id": "blockchain-fintech",
+      "date_tr": "1 Ocak 2026",
+      "date_en": "January 1, 2026",
       "title_tr": "Blockchain ve Fintech Devrimi",
       "title_en": "Blockchain and Fintech Revolution",
       "description_tr": "Blockchain teknolojisi, finans sektöründe şeffaflık ve güvenliği artırıyor. Kripto paralar ve akıllı sözleşmeler, geleneksel finansal sistemlere alternatif çözümler sunuyor.",
       "description_en": "Blockchain technology is increasing transparency and security in the financial sector. Cryptocurrencies and smart contracts offer alternative solutions to traditional financial systems.",
-      "link": ""
+      "content_tr": "Blockchain teknolojisi ve fintech sektörü, finansal hizmetleri kökten değiştiriyor. Bitcoin ve Ethereum gibi kripto paralar, merkezi olmayan finansal sistemler oluşturuyor. Akıllı sözleşmeler, aracıları ortadan kaldırarak işlem maliyetlerini düşürüyor. DeFi (Decentralized Finance) platformları, geleneksel bankacılık hizmetlerine alternatif sunuyor. NFT'ler, dijital varlık sahipliği kavramını değiştirdi. Central Bank Digital Currencies (CBDC) projelerinde birçok ülke çalışıyor. Blockchain, sadece finans değil, tedarik zinciri, sağlık ve gayrimenkul gibi sektörlerde de kullanılıyor. Regülasyon belirsizliği ve enerji tüketimi gibi zorluklar devam ediyor. Ancak teknolojinin potansiyeli, finansal ekosistemi şekillendirmeye devam edecek.",
+      "content_en": "Blockchain technology and the fintech sector are fundamentally changing financial services. Cryptocurrencies like Bitcoin and Ethereum are creating decentralized financial systems. Smart contracts reduce transaction costs by eliminating intermediaries. DeFi (Decentralized Finance) platforms offer alternatives to traditional banking services. NFTs have changed the concept of digital asset ownership. Many countries are working on Central Bank Digital Currencies (CBDC) projects. Blockchain is used not only in finance but also in sectors like supply chain, healthcare, and real estate. Challenges like regulatory uncertainty and energy consumption continue. However, the technology's potential will continue to shape the financial ecosystem."
     }
   ]
 }
