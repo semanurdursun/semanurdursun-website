@@ -1,225 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Sema Nur Dursun</title>
+    <title>Semanur Dursun - CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/NOREY LOGO.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="logo-circle" style="display:none;">SN</div>
-                <span>Sema Nur Dursun</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cv.html" class="active">CV</a></li>
-                    <li><a href="timeline.html">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html#news">News</a></li>
-                </ul>
-            </nav>
-            <div class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-display">EN</span></div>
+            <div class="logo">
+                <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="langToggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <div class="cv-container">
-        <div class="cv-header">
-            <h1>Sema Nur Dursun</h1>
-            <h2 data-en="Management Information Systems Student | AI Enthusiast | Aspire Leader" data-tr="Yönetim Bilişim Sistemleri Öğrencisi | Yapay Zeka Meraklısı | Aspire Lideri">Management Information Systems Student | AI Enthusiast | Aspire Leader</h2>
-            <div class="contact-info">
-                <span>📍 Istanbul, Turkey</span>
-                <span>📧 semanurdursun1@stu.topkapi.edu.tr</span>
-                <span>📱 +90 555 038 22 47</span>
+    <div class="hero-section">
+        <div class="hero-content">
+            <img src="assets/NOREY LOGO.png" alt="Profile Logo" class="hero-logo">
+            <h1>SEMA NUR DURSUN</h1>
+            <p class="location">📍 Üsküdar, Istanbul, Turkey</p>
+            <p>📧 dursunnurstudent@gmail.com | 📱 +90 555 038 22 47</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="cv-section">
+            <h2 data-tr="PROFİL BİLGİSİ" data-en="PROFILE INFO">PROFİL BİLGİSİ</h2>
+            <div class="cv-content">
+                <p data-tr="Yapay zeka ve veri analitiğine olan tutkum, Yönetim Bilişim Sistemleri alanında kariyer yapmama ilham verdi. Aspire Leaders Programı mezunu olarak, ileriye dönük ve çözüm odaklı liderlik yaklaşımını benimsiyorum. Teknik uzmanlığımı ve liderlik becerilerimi kullanarak yenilikçi, sürdürülebilir sistem değişiklikleri yaratmayı ve kendi girişimimi başlatarak anlamlı bir etki yaratmayı hedefliyorum."
+                   data-en="Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field.">
+                   Yapay zeka ve veri analitiğine olan tutkum, Yönetim Bilişim Sistemleri alanında kariyer yapmama ilham verdi. Aspire Leaders Programı mezunu olarak, ileriye dönük ve çözüm odaklı liderlik yaklaşımını benimsiyorum. Teknik uzmanlığımı ve liderlik becerilerimi kullanarak yenilikçi, sürdürülebilir sistem değişiklikleri yaratmayı ve kendi girişimimi başlatarak anlamlı bir etki yaratmayı hedefliyorum.
+                </p>
             </div>
         </div>
 
         <div class="cv-section">
-            <h3 data-en="Profile" data-tr="Profil">Profile</h3>
-            <p style="color: #555; line-height: 1.8; font-size: 16px;" data-en="Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field." data-tr="Yapay zeka ve veri analitiği tutkumla hareket ederek Yönetim Bilişim Sistemleri alanında eğitim almaya karar verdim. Aspire Leaders Programı mezunu olarak, ileriye dönük ve çözüm odaklı bir liderlik yaklaşımı benimsiyorum. Teknik uzmanlığımı ve liderlik becerilerimi kullanarak yenilikçi, sürdürülebilir sistem değişiklikleri yaratmayı ve bu alanda kendi girişimimi kurarak anlamlı bir etki yaratmayı hedefliyorum.">
-                Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field.
-            </p>
-        </div>
-
-        <div class="cv-section">
-            <h3 data-en="Experience" data-tr="Deneyim">Experience</h3>
-            
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="Finance Team Lead" data-tr="Finans Ekibi Lideri">Finance Team Lead</div>
-                        <div class="item-company">Flight Hour Project</div>
-                    </div>
-                    <div class="item-date">October 2025 – Present</div>
+            <h2 data-tr="EĞİTİM" data-en="EDUCATION">EĞİTİM</h2>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <h3>Istanbul Topkapı University, Istanbul, Turkey</h3>
+                    <p><strong data-tr="Yönetim Bilişim Sistemleri Lisans" data-en="B.Sc. in Management Information Systems">Yönetim Bilişim Sistemleri Lisans</strong></p>
+                    <p class="date">2023 – 2027 (Beklenen)</p>
                 </div>
-                <div class="item-description" data-en="Leading the finance team and managing budget processes for the Flight Hour Project." data-tr="Flight Hour Projesi için finans ekibine liderlik ediyor ve bütçe süreçlerini yönetiyorum.">
-                    Leading the finance team and managing budget processes for the Flight Hour Project.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="Student Assistant – Communication Office" data-tr="Öğrenci Asistanı – İletişim Ofisi">Student Assistant – Communication Office</div>
-                        <div class="item-company">Istanbul Topkapı University</div>
-                    </div>
-                    <div class="item-date">June 2024 – July 2024</div>
-                </div>
-                <div class="item-description" data-en="Participated in university promotion events and supported the communication team in various initiatives." data-tr="Üniversite tanıtım etkinliklerine katıldım ve iletişim ekibini çeşitli girişimlerde destekledim.">
-                    Participated in university promotion events and supported the communication team in various initiatives.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="Communication Intern – Social Media Development" data-tr="İletişim Stajyeri – Sosyal Medya Geliştirme">Communication Intern – Social Media Development</div>
-                        <div class="item-company" data-en="Gökçeada Municipality" data-tr="Gökçeada Belediyesi">Gökçeada Municipality</div>
-                    </div>
-                    <div class="item-date">2024</div>
-                </div>
-                <div class="item-description" data-en="Completed a 20-day internship focused on improving the municipality's social media presence and engagement strategies." data-tr="Belediyenin sosyal medya varlığını ve etkileşim stratejilerini geliştirmeye odaklanan 20 günlük bir staj tamamladım.">
-                    Completed a 20-day internship focused on improving the municipality's social media presence and engagement strategies.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="Packaging Assistant (Volunteer)" data-tr="Paketleme Asistanı (Gönüllü)">Packaging Assistant (Volunteer)</div>
-                        <div class="item-company" data-en="LÖSEV – Foundation for Children with Leukemia" data-tr="LÖSEV – Lösemili Çocuklar Vakfı">LÖSEV – Foundation for Children with Leukemia</div>
-                    </div>
-                    <div class="item-date">2021 – Present</div>
-                </div>
-                <div class="item-description" data-en="Active volunteer since 2021, supporting various social responsibility projects including mandarin packaging operations." data-tr="2021'den beri aktif gönüllü olarak mandalina paketleme operasyonları dahil çeşitli sosyal sorumluluk projelerini destekliyorum.">
-                    Active volunteer since 2021, supporting various social responsibility projects including mandarin packaging operations.
+                <div class="cv-item">
+                    <h3 data-tr="Lise Eğitimi" data-en="High School Education">Lise Eğitimi</h3>
+                    <p data-tr="En Eğitim Lisesi dahil çeşitli liselerde eğitim gördüm (2021 – 2022)" 
+                       data-en="Attended multiple high schools, including En Eğitim High School (2021 – 2022)">
+                       En Eğitim Lisesi dahil çeşitli liselerde eğitim gördüm (2021 – 2022)
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="cv-section">
-            <h3 data-en="Education" data-tr="Eğitim">Education</h3>
-            
-            <div class="education-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="B.Sc. in Management Information Systems" data-tr="Yönetim Bilişim Sistemleri Lisans">B.Sc. in Management Information Systems</div>
-                        <div class="item-company">Istanbul Topkapı University, Istanbul, Turkey</div>
+            <h2 data-tr="YETENEKLER" data-en="SKILLS">YETENEKLER</h2>
+            <div class="cv-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 data-tr="Programlama Dilleri" data-en="Programming Languages">Programlama Dilleri</h4>
+                        <ul>
+                            <li>Python (Başlangıç)</li>
+                            <li>SQL (MSSQL)</li>
+                            <li>HTML/CSS (Temel)</li>
+                        </ul>
                     </div>
-                    <div class="item-date">2023 – Expected 2027</div>
-                </div>
-                <div class="item-description" data-en="Focusing on artificial intelligence, data analytics, and innovative system development." data-tr="Yapay zeka, veri analitiği ve yenilikçi sistem geliştirmeye odaklanıyorum.">
-                    Focusing on artificial intelligence, data analytics, and innovative system development.
-                </div>
-            </div>
-
-            <div class="education-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="High School Education" data-tr="Lise Eğitimi">High School Education</div>
-                        <div class="item-company" data-en="En Eğitim High School & Others" data-tr="En Eğitim Lisesi ve Diğerleri">En Eğitim High School & Others</div>
+                    <div class="skill-category">
+                        <h4 data-tr="Veritabanları" data-en="Databases">Veritabanları</h4>
+                        <ul>
+                            <li>Microsoft SQL Server (Temel)</li>
+                        </ul>
                     </div>
-                    <div class="item-date">2021 – 2022</div>
+                    <div class="skill-category">
+                        <h4 data-tr="Web Geliştirme" data-en="Web Development">Web Geliştirme</h4>
+                        <ul>
+                            <li>HTML & CSS (Temel)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-tr="Kişisel Beceriler" data-en="Soft Skills">Kişisel Beceriler</h4>
+                        <ul>
+                            <li data-tr="Problem Çözme" data-en="Problem Solving">Problem Çözme</li>
+                            <li data-tr="Stres Yönetimi" data-en="Stress Resilience">Stres Yönetimi</li>
+                            <li data-tr="Takım Çalışması" data-en="Team-oriented">Takım Çalışması</li>
+                            <li data-tr="Pozitif Yaklaşım" data-en="Positive Disposition">Pozitif Yaklaşım</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="cv-section">
-            <h3 data-en="Certifications" data-tr="Sertifikalar">Certifications</h3>
-            
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="Aspire Leaders Program Certificate" data-tr="Aspire Liderler Programı Sertifikası">Aspire Leaders Program Certificate</div>
-                        <div class="item-company">Aspire Institute</div>
+            <h2 data-tr="DİLLER" data-en="LANGUAGES">DİLLER</h2>
+            <div class="cv-content">
+                <div class="language-grid">
+                    <div class="language-item">
+                        <span class="lang-name" data-tr="İngilizce" data-en="English">İngilizce</span>
+                        <span class="lang-level">B2 (Üst-Orta)</span>
                     </div>
-                    <div class="item-date">October 2025</div>
-                </div>
-                <div class="item-description" data-en="Completed 40 hours of coursework. Developed critical thinking, communication, and leadership skills with a focus on global social impact." data-tr="40 saatlik kurs çalışmasını tamamladım. Küresel sosyal etkiye odaklanarak eleştirel düşünme, iletişim ve liderlik becerilerimi geliştirdim.">
-                    Completed 40 hours of coursework. Developed critical thinking, communication, and leadership skills with a focus on global social impact.
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <div>
-                        <div class="item-title" data-en="SQL Server Training Certificate" data-tr="SQL Server Eğitim Sertifikası">SQL Server Training Certificate</div>
-                        <div class="item-company">Lions Academy</div>
+                    <div class="language-item">
+                        <span class="lang-name" data-tr="Almanca" data-en="German">Almanca</span>
+                        <span class="lang-level">A1 (Başlangıç)</span>
                     </div>
-                    <div class="item-date">2024</div>
+                    <div class="language-item">
+                        <span class="lang-name" data-tr="Fransızca" data-en="French">Fransızca</span>
+                        <span class="lang-level">A1 (Başlangıç)</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="cv-section">
-            <h3 data-en="Skills" data-tr="Yetenekler">Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4 data-en="Programming & Development" data-tr="Programlama ve Geliştirme">Programming & Development</h4>
-                    <ul>
-                        <li>Python (Beginner)</li>
-                        <li>SQL (MSSQL)</li>
-                        <li>HTML/CSS (Basic)</li>
-                        <li>Microsoft SQL Server</li>
-                    </ul>
+            <h2 data-tr="DENEYİM" data-en="EXPERIENCE">DENEYİM</h2>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <h3 data-tr="Finans Ekibi Lideri – Flight Hour Projesi" data-en="Finance Team Lead – Flight Hour Project">Finans Ekibi Lideri – Flight Hour Projesi</h3>
+                    <p class="date">Ekim 2025 – Şu An</p>
+                    <p data-tr="Finans ekibine liderlik ediyor ve bütçe süreçlerini yönetiyorum." 
+                       data-en="Leading the finance team and managing budget processes.">
+                       Finans ekibine liderlik ediyor ve bütçe süreçlerini yönetiyorum.
+                    </p>
                 </div>
-
-                <div class="skill-category">
-                    <h4 data-en="Soft Skills" data-tr="Kişisel Beceriler">Soft Skills</h4>
-                    <ul>
-                        <li data-en="Problem Solving" data-tr="Problem Çözme">Problem Solving</li>
-                        <li data-en="Stress Resilience" data-tr="Stres Dayanıklılığı">Stress Resilience</li>
-                        <li data-en="Team-oriented" data-tr="Takım Odaklı">Team-oriented</li>
-                        <li data-en="Leadership" data-tr="Liderlik">Leadership</li>
-                        <li data-en="Communication" data-tr="İletişim">Communication</li>
-                        <li data-en="Critical Thinking" data-tr="Eleştirel Düşünme">Critical Thinking</li>
-                    </ul>
+                <div class="cv-item">
+                    <h3 data-tr="Öğrenci Asistanı – İletişim Ofisi" data-en="Student Assistant – Communication Office">Öğrenci Asistanı – İletişim Ofisi</h3>
+                    <p><strong>Istanbul Topkapı University</strong></p>
+                    <p class="date">Haziran 2024 – Temmuz 2024</p>
+                    <p data-tr="Üniversite tanıtım etkinliklerine katıldım ve iletişim ekibini destekledim." 
+                       data-en="Participated in university promotion events and supported the communication team.">
+                       Üniversite tanıtım etkinliklerine katıldım ve iletişim ekibini destekledim.
+                    </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="cv-section">
-            <h3 data-en="Languages" data-tr="Diller">Languages</h3>
-            <div class="languages-list">
-                <div class="language-item">
-                    <div class="language-name">English</div>
-                    <div class="language-level">B2 - Upper Intermediate</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">German</div>
-                    <div class="language-level">A1 - Beginner</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">French</div>
-                    <div class="language-level">A1 - Beginner</div>
-                </div>
-                <div class="language-item">
-                    <div class="language-name">Turkish</div>
-                    <div class="language-level">Native</div>
+                <div class="cv-item">
+                    <h3 data-tr="İletişim Stajyeri – Sosyal Medya Geliştirme" data-en="Communication Intern – Social Media Development">İletişim Stajyeri – Sosyal Medya Geliştirme</h3>
+                    <p><strong data-tr="Gökçeada Belediyesi" data-en="Gökçeada Municipality">Gökçeada Belediyesi</strong></p>
+                    <p data-tr="Belediyenin sosyal medya varlığını geliştirmeye odaklanan 20 günlük staj tamamladım." 
+                       data-en="Completed a 20-day internship focused on improving the municipality's social media presence.">
+                       Belediyenin sosyal medya varlığını geliştirmeye odaklanan 20 günlük staj tamamladım.
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="cv-section">
-            <h3 data-en="Reference" data-tr="Referans">Reference</h3>
-            <div class="item-company" style="margin-bottom: 10px;">Engin Hengirmen</div>
-            <div style="color: #555; line-height: 1.6;" data-en="Academic Advisor, Department of Management Information Systems" data-tr="Akademik Danışman, Yönetim Bilişim Sistemleri Bölümü">
-                Academic Advisor, Department of Management Information Systems<br>
-                Istanbul Topkapı University<br>
-                📧 enginhengirmen@topkapi.edu.tr
+            <h2 data-tr="SERTİFİKALAR" data-en="CERTIFICATIONS">SERTİFİKALAR</h2>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <h3>Aspire Leaders Program Certificate</h3>
+                    <p><strong>Aspire Institute</strong> | Ekim 2025</p>
+                    <p data-tr="40 saatlik kurs tamamlandı. Küresel sosyal etkiye odaklanarak eleştirel düşünme, iletişim ve liderlik becerileri geliştirildi." 
+                       data-en="Completed 40 hours of coursework. Developed critical thinking, communication, and leadership skills with a focus on global social impact.">
+                       40 saatlik kurs tamamlandı. Küresel sosyal etkiye odaklanarak eleştirel düşünme, iletişim ve liderlik becerileri geliştirildi.
+                    </p>
+                </div>
+                <div class="cv-item">
+                    <h3>SQL Server Training Certificate</h3>
+                    <p><strong>Lions Academy</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2 data-tr="GÖNÜLLÜ ÇALIŞMALAR" data-en="VOLUNTEER WORK">GÖNÜLLÜ ÇALIŞMALAR</h2>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <h3>LÖSEV Gönüllüsü</h3>
+                    <p data-tr="2021'den beri aktif gönüllü, çeşitli sosyal sorumluluk projelerini destekliyorum." 
+                       data-en="Active volunteer since 2021, supporting various social responsibility projects.">
+                       2021'den beri aktif gönüllü, çeşitli sosyal sorumluluk projelerini destekliyorum.
+                    </p>
+                </div>
+                <div class="cv-item">
+                    <h3 data-tr="Paketleme Asistanı (Gönüllü)" data-en="Packaging Assistant (Volunteer)">Paketleme Asistanı (Gönüllü)</h3>
+                    <p><strong>LÖSEV</strong></p>
+                    <p data-tr="Mandalina paketleme operasyonlarında yardımcı olmak için bir hafta çalıştım." 
+                       data-en="Worked for one week assisting with mandarin packaging operations.">
+                       Mandalina paketleme operasyonlarında yardımcı olmak için bir hafta çalıştım.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2 data-tr="REFERANSLAR" data-en="REFERENCES">REFERANSLAR</h2>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <h3>Engin Hengirmen</h3>
+                    <p data-tr="Akademik Danışman, Yönetim Bilişim Sistemleri Bölümü" 
+                       data-en="Academic Advisor, Department of Management Information Systems">
+                       Akademik Danışman, Yönetim Bilişim Sistemleri Bölümü
+                    </p>
+                    <p><strong>Istanbul Topkapı University</strong></p>
+                    <p>📧 enginhengirmen@topkapi.edu.tr</p>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Sema Nur Dursun. All rights reserved.</p>
-        <p data-en="Built with passion for AI and innovation 🚀" data-tr="Yapay zeka ve inovasyon tutkusuyla yapıldı 🚀">Built with passion for AI and innovation 🚀</p>
+        <p data-tr="© 2026 Semanur Dursun. Tüm hakları saklıdır." data-en="© 2026 Semanur Dursun. All rights reserved.">© 2026 Semanur Dursun. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="lang.js"></script>
 </body>
 </html>
+
+     
+                   
+              
+    
+           
+                    
+           
+                 
+              
