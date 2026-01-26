@@ -1,223 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule & Timeline - Sema Nur Dursun</title>
+    <title>Semanur Dursun - Timeline & Schedule</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/NOREY LOGO.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="logo-circle" style="display:none;">SN</div>
-                <span>Sema Nur Dursun</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="timeline.html" class="active">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html#news">News</a></li>
-                </ul>
-            </nav>
-            <div class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-display">EN</span></div>
+            <div class="logo">
+                <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="timeline.html" class="active">Timeline</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="langToggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <div class="timeline-container">
-        <h1 data-en="My Weekly Schedule & Activities" data-tr="Haftalık Programım ve Aktivitelerim">My Weekly Schedule & Activities</h1>
-        
+    <div class="hero-section">
+        <div class="hero-content">
+            <img src="assets/NOREY LOGO.png" alt="Profile Logo" class="hero-logo">
+            <h1 data-tr="Ders Programım & Zaman Çizelgesi" data-en="My Schedule & Timeline">Ders Programım & Zaman Çizelgesi</h1>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <!-- Weekly Schedule -->
         <div class="schedule-section">
-            <h2 data-en="📚 Course Schedule" data-tr="📚 Ders Programı">📚 Course Schedule</h2>
-            
-            <div class="schedule-table-wrapper">
+            <h2 data-tr="📅 Haftalık Ders Programım" data-en="📅 My Weekly Course Schedule">📅 Haftalık Ders Programım</h2>
+            <div class="table-container">
                 <table class="schedule-table">
                     <thead>
                         <tr>
-                            <th data-en="Day" data-tr="Gün">Day</th>
-                            <th data-en="Time" data-tr="Saat">Time</th>
-                            <th data-en="Course" data-tr="Ders">Course</th>
-                            <th data-en="Duration" data-tr="Süre">Duration</th>
+                            <th data-tr="Gün" data-en="Day">Gün</th>
+                            <th data-tr="Saat" data-en="Time">Saat</th>
+                            <th data-tr="Ders" data-en="Course">Ders</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="day-monday">
-                            <td rowspan="2"><strong data-en="Monday" data-tr="Pazartesi">Monday</strong></td>
+                        <tr style="border-left: 5px solid var(--pastel-pink);">
+                            <td><strong data-tr="Pazartesi" data-en="Monday">Pazartesi</strong></td>
                             <td>12:00 - 15:00</td>
-                            <td data-en="Management Organization" data-tr="Yönetim Organizasyonu">Management Organization</td>
-                            <td>3 hrs</td>
+                            <td data-tr="Yönetim ve Organizasyon" data-en="Management and Organization">Yönetim ve Organizasyon</td>
                         </tr>
-                        <tr class="day-monday">
+                        <tr style="border-left: 5px solid var(--pastel-yellow);">
+                            <td><strong data-tr="Pazartesi" data-en="Monday">Pazartesi</strong></td>
                             <td>22:00 - 23:00</td>
-                            <td data-en="Atatürk Principles and History of Revolution" data-tr="Atatürk İlkeleri ve İnkılap Tarihi">Atatürk Principles and History of Revolution</td>
-                            <td>1 hr</td>
+                            <td data-tr="Atatürk İlkeleri ve İnkılap Tarihi" data-en="Atatürk Principles and History of Revolution">Atatürk İlkeleri ve İnkılap Tarihi</td>
                         </tr>
-                        
-                        <tr class="day-tuesday">
-                            <td rowspan="3"><strong data-en="Tuesday" data-tr="Salı">Tuesday</strong></td>
+                        <tr style="border-left: 5px solid var(--pastel-green);">
+                            <td><strong data-tr="Salı" data-en="Tuesday">Salı</strong></td>
                             <td>09:00 - 12:00</td>
-                            <td data-en="Data Structure" data-tr="Veri Yapıları">Data Structure</td>
-                            <td>3 hrs</td>
+                            <td data-tr="Veri Yapıları" data-en="Data Structures">Veri Yapıları</td>
                         </tr>
-                        <tr class="day-tuesday">
+                        <tr style="border-left: 5px solid var(--pastel-orange);">
+                            <td><strong data-tr="Salı" data-en="Tuesday">Salı</strong></td>
                             <td>12:00 - 15:00</td>
-                            <td>MIS (Management Information Systems)</td>
-                            <td>3 hrs</td>
+                            <td data-tr="Yönetim Bilişim Sistemleri" data-en="Management Information Systems">Yönetim Bilişim Sistemleri</td>
                         </tr>
-                        <tr class="day-tuesday">
+                        <tr style="border-left: 5px solid var(--pastel-purple);">
+                            <td><strong data-tr="Salı" data-en="Tuesday">Salı</strong></td>
                             <td>15:00 - 19:00</td>
-                            <td data-en="Marketing Management" data-tr="Pazarlama Yönetimi">Marketing Management</td>
-                            <td>4 hrs</td>
+                            <td data-tr="Pazarlama Yönetimi" data-en="Marketing Management">Pazarlama Yönetimi</td>
                         </tr>
-                        
-                        <tr class="day-wednesday">
-                            <td><strong data-en="Wednesday" data-tr="Çarşamba">Wednesday</strong></td>
+                        <tr style="border-left: 5px solid var(--pastel-pink);">
+                            <td><strong data-tr="Çarşamba" data-en="Wednesday">Çarşamba</strong></td>
                             <td>12:00 - 15:00</td>
-                            <td data-en="Business" data-tr="İşletme">Business</td>
-                            <td>3 hrs</td>
+                            <td data-tr="İşletme" data-en="Business">İşletme</td>
                         </tr>
-                        
-                        <tr class="day-thursday">
-                            <td><strong data-en="Thursday" data-tr="Perşembe">Thursday</strong></td>
+                        <tr style="border-left: 5px solid var(--pastel-yellow);">
+                            <td><strong data-tr="Perşembe" data-en="Thursday">Perşembe</strong></td>
                             <td>09:00 - 12:00</td>
-                            <td data-en="Web Design" data-tr="Web Tasarımı">Web Design</td>
-                            <td>3 hrs</td>
-                        </tr>
-                        
-                        <tr class="day-friday">
-                            <td><strong data-en="Friday" data-tr="Cuma">Friday</strong></td>
-                            <td colspan="3" class="free-day" data-en="Free Day - Self Study & Projects" data-tr="Serbest Gün - Kendi Çalışmam ve Projeler">Free Day - Self Study & Projects</td>
-                        </tr>
-                        
-                        <tr class="day-weekend">
-                            <td><strong data-en="Weekend" data-tr="Hafta Sonu">Weekend</strong></td>
-                            <td colspan="3" class="free-day" data-en="Volunteer Activities & Personal Development" data-tr="Gönüllü Aktiviteler ve Kişisel Gelişim">Volunteer Activities & Personal Development</td>
+                            <td data-tr="Web Tasarımı" data-en="Web Design">Web Tasarımı</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
+        <!-- Activities Section -->
         <div class="activities-section">
-            <h2 data-en="🎨 Artistic & Sports Activities" data-tr="🎨 Sanatsal ve Sporsal Faaliyetler">🎨 Artistic & Sports Activities</h2>
-            
+            <h2 data-tr="🎨 Sanatsal ve Sportif Faaliyetler" data-en="🎨 Artistic and Sports Activities">🎨 Sanatsal ve Sportif Faaliyetler</h2>
             <div class="activities-grid">
-                <div class="activity-card activity-art">
-                    <div class="activity-icon">🎭</div>
-                    <h3 data-en="Creative Writing" data-tr="Yaratıcı Yazarlık">Creative Writing</h3>
-                    <p data-en="Exploring storytelling and content creation for social media and blogs." data-tr="Sosyal medya ve bloglar için hikaye anlatıcılığı ve içerik oluşturma keşfi.">Exploring storytelling and content creation for social media and blogs.</p>
-                    <span class="activity-frequency" data-en="Weekly" data-tr="Haftalık">Weekly</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-orange));">
+                    <h3>🎨</h3>
+                    <h4 data-tr="Grafik Tasarım" data-en="Graphic Design">Grafik Tasarım</h4>
+                    <p data-tr="Dijital sanat ve görsel tasarım projeleri" data-en="Digital art and visual design projects">Dijital sanat ve görsel tasarım projeleri</p>
                 </div>
-
-                <div class="activity-card activity-sport">
-                    <div class="activity-icon">🏃‍♀️</div>
-                    <h3 data-en="Running & Fitness" data-tr="Koşu ve Fitness">Running & Fitness</h3>
-                    <p data-en="Regular running sessions and fitness training for physical and mental wellness." data-tr="Fiziksel ve zihinsel sağlık için düzenli koşu ve fitness antrenmanları.">Regular running sessions and fitness training for physical and mental wellness.</p>
-                    <span class="activity-frequency" data-en="3x per week" data-tr="Haftada 3 kez">3x per week</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-green), var(--pastel-yellow));">
+                    <h3>🧘‍♀️</h3>
+                    <h4>Yoga</h4>
+                    <p data-tr="Haftalık yoga ve meditasyon seansları" data-en="Weekly yoga and meditation sessions">Haftalık yoga ve meditasyon seansları</p>
                 </div>
-
-                <div class="activity-card activity-tech">
-                    <div class="activity-icon">💻</div>
-                    <h3 data-en="Coding Projects" data-tr="Kodlama Projeleri">Coding Projects</h3>
-                    <p data-en="Building personal projects in Python, SQL, and web development to enhance technical skills." data-tr="Teknik becerileri geliştirmek için Python, SQL ve web geliştirme alanında kişisel projeler oluşturma.">Building personal projects in Python, SQL, and web development to enhance technical skills.</p>
-                    <span class="activity-frequency" data-en="Daily" data-tr="Günlük">Daily</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink));">
+                    <h3>💪</h3>
+                    <h4>Fitness</h4>
+                    <p data-tr="Düzenli spor ve kondisyon çalışmaları" data-en="Regular sports and fitness training">Düzenli spor ve kondisyon çalışmaları</p>
                 </div>
-
-                <div class="activity-card activity-volunteer">
-                    <div class="activity-icon">❤️</div>
-                    <h3 data-en="Volunteer Work - LÖSEV" data-tr="Gönüllü Çalışma - LÖSEV">Volunteer Work - LÖSEV</h3>
-                    <p data-en="Supporting children with leukemia through various social responsibility projects." data-tr="Çeşitli sosyal sorumluluk projeleri aracılığıyla lösemili çocukları destekleme.">Supporting children with leukemia through various social responsibility projects.</p>
-                    <span class="activity-frequency" data-en="Monthly" data-tr="Aylık">Monthly</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-yellow), var(--pastel-green));">
+                    <h3>🚶‍♀️</h3>
+                    <h4 data-tr="Yürüyüş" data-en="Walking">Yürüyüş</h4>
+                    <p data-tr="Doğa yürüyüşleri ve keşif" data-en="Nature walks and exploration">Doğa yürüyüşleri ve keşif</p>
                 </div>
-
-                <div class="activity-card activity-art">
-                    <div class="activity-icon">📚</div>
-                    <h3 data-en="Reading & Research" data-tr="Okuma ve Araştırma">Reading & Research</h3>
-                    <p data-en="Reading books and research papers on AI, data analytics, and leadership." data-tr="Yapay zeka, veri analitiği ve liderlik üzerine kitaplar ve araştırma makaleleri okuma.">Reading books and research papers on AI, data analytics, and leadership.</p>
-                    <span class="activity-frequency" data-en="Daily" data-tr="Günlük">Daily</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-orange), var(--pastel-pink));">
+                    <h3>📚</h3>
+                    <h4 data-tr="Okuma Kulübü" data-en="Book Club">Okuma Kulübü</h4>
+                    <p data-tr="Aylık kitap tartışmaları" data-en="Monthly book discussions">Aylık kitap tartışmaları</p>
                 </div>
-
-                <div class="activity-card activity-social">
-                    <div class="activity-icon">🤝</div>
-                    <h3 data-en="Networking & Leadership" data-tr="Networking ve Liderlik">Networking & Leadership</h3>
-                    <p data-en="Attending workshops, seminars, and building professional connections." data-tr="Atölyelere, seminerlere katılma ve profesyonel bağlantılar kurma.">Attending workshops, seminars, and building professional connections.</p>
-                    <span class="activity-frequency" data-en="Bi-weekly" data-tr="İki haftada bir">Bi-weekly</span>
+                <div class="activity-card" style="background: linear-gradient(135deg, var(--pastel-green), var(--pastel-purple));">
+                    <h3>🎵</h3>
+                    <h4 data-tr="Müzik" data-en="Music">Müzik</h4>
+                    <p data-tr="Enstrüman çalışmaları ve konserler" data-en="Instrument practice and concerts">Enstrüman çalışmaları ve konserler</p>
                 </div>
             </div>
         </div>
 
-        <div class="timeline-visual">
-            <h2 data-en="📅 Academic Timeline" data-tr="📅 Akademik Zaman Çizelgesi">📅 Academic Timeline</h2>
-            
-            <div class="timeline">
+        <!-- Timeline Section -->
+        <div class="timeline-wrapper">
+            <h2 data-tr="📍 Eğitim ve Kariyer Zaman Çizelgesi" data-en="📍 Education and Career Timeline">📍 Eğitim ve Kariyer Zaman Çizelgesi</h2>
+            <div class="timeline-container">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2021 - 2022</h3>
-                        <h4 data-en="High School Graduation" data-tr="Lise Mezuniyeti">High School Graduation</h4>
-                        <p data-en="Completed high school education at En Eğitim High School." data-tr="En Eğitim Lisesi'nde lise eğitimini tamamladım.">Completed high school education at En Eğitim High School.</p>
-                    </div>
+                    <div class="timeline-date">2023 - Şu An</div>
+                    <h3 data-tr="İstanbul Topkapı Üniversitesi" data-en="Istanbul Topkapı University">İstanbul Topkapı Üniversitesi</h3>
+                    <p data-tr="Yönetim Bilişim Sistemleri Lisans Öğrencisi" data-en="B.Sc. in Management Information Systems">Yönetim Bilişim Sistemleri Lisans Öğrencisi</p>
                 </div>
-
+                
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2023</h3>
-                        <h4 data-en="Started University" data-tr="Üniversiteye Başladım">Started University</h4>
-                        <p data-en="Began B.Sc. in Management Information Systems at Istanbul Topkapı University." data-tr="Istanbul Topkapı Üniversitesi'nde Yönetim Bilişim Sistemleri Lisans programına başladım.">Began B.Sc. in Management Information Systems at Istanbul Topkapı University.</p>
-                    </div>
+                    <div class="timeline-date" data-tr="Ekim 2025 - Şu An" data-en="October 2025 - Present">Ekim 2025 - Şu An</div>
+                    <h3 data-tr="Finans Ekibi Lideri" data-en="Finance Team Lead">Finans Ekibi Lideri</h3>
+                    <p data-tr="Flight Hour Projesi - Finans süreçlerini yönetiyorum" data-en="Flight Hour Project - Managing finance processes">Flight Hour Projesi - Finans süreçlerini yönetiyorum</p>
                 </div>
-
+                
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <h4 data-en="Professional Experience" data-tr="Profesyonel Deneyim">Professional Experience</h4>
-                        <p data-en="Completed internships and gained practical experience in communication and social media." data-tr="Stajları tamamladım ve iletişim ve sosyal medya alanında pratik deneyim kazandım.">Completed internships and gained practical experience in communication and social media.</p>
-                    </div>
+                    <div class="timeline-date" data-tr="Ekim 2025" data-en="October 2025">Ekim 2025</div>
+                    <h3>Aspire Leaders Program</h3>
+                    <p data-tr="40 saatlik liderlik ve iletişim eğitimi tamamlandı" data-en="Completed 40 hours of leadership and communication training">40 saatlik liderlik ve iletişim eğitimi tamamlandı</p>
                 </div>
-
+                
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>October 2025</h3>
-                        <h4 data-en="Aspire Leaders Program" data-tr="Aspire Liderler Programı">Aspire Leaders Program</h4>
-                        <p data-en="Completed 40-hour leadership training focusing on global social impact." data-tr="Küresel sosyal etkiye odaklanan 40 saatlik liderlik eğitimini tamamladım.">Completed 40-hour leadership training focusing on global social impact.</p>
-                    </div>
+                    <div class="timeline-date" data-tr="Haziran 2024 - Temmuz 2024" data-en="June 2024 - July 2024">Haziran 2024 - Temmuz 2024</div>
+                    <h3 data-tr="Öğrenci Asistanı" data-en="Student Assistant">Öğrenci Asistanı</h3>
+                    <p data-tr="İstanbul Topkapı Üniversitesi İletişim Ofisi" data-en="Istanbul Topkapı University Communication Office">İstanbul Topkapı Üniversitesi İletişim Ofisi</p>
                 </div>
-
-                <div class="timeline-item timeline-future">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2027</h3>
-                        <h4 data-en="Expected Graduation" data-tr="Tahmini Mezuniyet">Expected Graduation</h4>
-                        <p data-en="Expected to graduate with expertise in AI, data analytics, and innovative system development." data-tr="Yapay zeka, veri analitiği ve yenilikçi sistem geliştirme uzmanlığıyla mezun olmayı bekliyorum.">Expected to graduate with expertise in AI, data analytics, and innovative system development.</p>
-                    </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <h3 data-tr="İletişim Stajyeri" data-en="Communication Intern">İletişim Stajyeri</h3>
+                    <p data-tr="Gökçeada Belediyesi - Sosyal Medya Geliştirme (20 gün)" data-en="Gökçeada Municipality - Social Media Development (20 days)">Gökçeada Belediyesi - Sosyal Medya Geliştirme (20 gün)</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date" data-tr="2021 - Şu An" data-en="2021 - Present">2021 - Şu An</div>
+                    <h3 data-tr="LÖSEV Gönüllüsü" data-en="LÖSEV Volunteer">LÖSEV Gönüllüsü</h3>
+                    <p data-tr="Sosyal sorumluluk projelerinde aktif gönüllü" data-en="Active volunteer in social responsibility projects">Sosyal sorumluluk projelerinde aktif gönüllü</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <h3 data-tr="Lise Eğitimi" data-en="High School Education">Lise Eğitimi</h3>
+                    <p data-tr="En Eğitim Lisesi" data-en="En Eğitim High School">En Eğitim Lisesi</p>
                 </div>
             </div>
         </div>
 
-        <div class="spam-protection-info">
-            <div class="info-box">
-                <h3>🔒 <span data-en="Spam Protection Active" data-tr="Spam Koruması Aktif">Spam Protection Active</span></h3>
-                <p data-en="This website uses advanced spam protection mechanisms to ensure secure communication. All form submissions are validated and protected." data-tr="Bu web sitesi güvenli iletişim sağlamak için gelişmiş spam koruma mekanizmaları kullanır. Tüm form gönderimleri doğrulanır ve korunur.">This website uses advanced spam protection mechanisms to ensure secure communication. All form submissions are validated and protected.</p>
+        <!-- News Section -->
+        <div class="news-section">
+            <h2 data-tr="📰 Haberler & Yayınlar" data-en="📰 News & Publications">📰 Haberler & Yayınlar</h2>
+            <div id="newsContainer" class="news-grid">
+                <!-- News will be loaded dynamically from news.json -->
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Sema Nur Dursun. All rights reserved.</p>
-        <p data-en="Built with passion for AI and innovation 🚀" data-tr="Yapay zeka ve inovasyon tutkusuyla yapıldı 🚀">Built with passion for AI and innovation 🚀</p>
+        <p data-tr="© 2026 Semanur Dursun. Tüm hakları saklıdır." data-en="© 2026 Semanur Dursun. All rights reserved.">© 2026 Semanur Dursun. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="lang.js"></script>
+    <script>
+        // Load news from JSON file
+        async function loadNews() {
+            try {
+                const response = await fetch('news.json');
+                const data = await response.json();
+                const newsContainer = document.getElementById('newsContainer');
+                const currentLang = document.documentElement.lang;
+                
+                newsContainer.innerHTML = data.news.map(item => `
+                    <div class="news-card">
+                        <div class="news-date">${item.date}</div>
+                        <h3>${currentLang === 'tr' ? item.title_tr : item.title_en}</h3>
+                        <p>${currentLang === 'tr' ? item.description_tr : item.description_en}</p>
+                        ${item.link ? `<a href="${item.link}" target="_blank" class="news-link">Devamını Oku →</a>` : ''}
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('News loading error:', error);
+            }
+        }
+        
+        // Load news on page load
+        window.addEventListener('DOMContentLoaded', loadNews);
+    </script>
 </body>
 </html>
-
-     
+         
+                      
+                 
+                   
 
 
 
