@@ -1,152 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sema Nur Dursun - Home</title>
+    <title>Semanur Dursun - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/NOREY LOGO.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="logo-circle" style="display:none;">SN</div>
-                <span>Sema Nur Dursun</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="timeline.html">Schedule</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#news" onclick="scrollToNews()">News</a></li>
-                </ul>
-            </nav>
-            <div class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-display">EN</span></div>
+            <div class="logo">
+                <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="langToggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <div class="hero">
+    <div class="hero-section">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 data-en="Welcome!" data-tr="Hoş Geldiniz!">Welcome!</h1>
-                <h2 data-en="Management Information Systems Student" data-tr="Yönetim Bilişim Sistemleri Öğrencisi">Management Information Systems Student</h2>
-                <p data-en="Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field." 
-                   data-tr="Yapay zeka ve veri analitiği tutkumla hareket ederek Yönetim Bilişim Sistemleri alanında eğitim almaya karar verdim. Aspire Leaders Programı mezunu olarak, ileriye dönük ve çözüm odaklı bir liderlik yaklaşımı benimsiyorum. Teknik uzmanlığımı ve liderlik becerilerimi kullanarak yenilikçi, sürdürülebilir sistem değişiklikleri yaratmayı ve bu alanda kendi girişimimi kurarak anlamlı bir etki yaratmayı hedefliyorum.">
-                    Driven by my passion for artificial intelligence and data analytics, I chose to pursue a degree in Management Information Systems. As an Aspire Leaders Program graduate, I embrace a forward-thinking and solution-oriented leadership approach. I aim to leverage my technical expertise and leadership skills to create innovative, sustainable system changes and make a meaningful impact by launching my own venture in the field.
+            <img src="assets/NOREY LOGO.png" alt="Profile Logo" class="hero-logo">
+            <h1 data-tr="Merhaba! Ben Semanur Dursun" data-en="Hello! I'm Semanur Dursun">Merhaba! Ben Semanur Dursun</h1>
+            <p data-tr="Yönetim Bilişim Sistemleri Öğrencisi" data-en="Management Information Systems Student">Yönetim Bilişim Sistemleri Öğrencisi</p>
+            <p class="location" data-tr="📍 Üsküdar, İstanbul, Türkiye" data-en="📍 Üsküdar, Istanbul, Turkey">📍 Üsküdar, İstanbul, Türkiye</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+            <div class="banner-content">
+                <h2 data-tr="👋 Hoş Geldiniz!" data-en="👋 Welcome!">👋 Hoş Geldiniz!</h2>
+                <p data-tr="Dijital dünyada yolculuğuma katılın! Yapay zeka, veri bilimi ve teknoloji tutkusuyla dolu bir serüven." 
+                   data-en="Join my journey in the digital world! An adventure full of passion for AI, data science and technology.">
+                   Dijital dünyada yolculuğuma katılın! Yapay zeka, veri bilimi ve teknoloji tutkusuyla dolu bir serüven.
                 </p>
-                <p>
-                    <strong>📍 Istanbul, Turkey</strong><br>
-                    <strong>📧 semanurdursun1@stu.topkapi.edu.tr</strong><br>
-                    <strong>📱 +90 555 XXX XX XX</strong>
-                </p>
-            </div>
-            <div class="hero-image">👩‍💻</div>
-        </div>
-    </div>
-
-    <div class="info-grid">
-        <div class="info-card">
-            <h3><span class="icon"></span> <span data-en="Skills" data-tr="Yetenekler">Skills</span></h3>
-            <ul>
-                <li><strong>Python</strong> (Beginner)</li>
-                <li><strong>SQL</strong> (MSSQL)</li>
-                <li><strong>HTML/CSS</strong> (Basic)</li>
-                <li data-en="Problem Solving" data-tr="Problem Çözme">Problem Solving</li>
-                <li data-en="Team-oriented & Motivated" data-tr="Takım Odaklı & Motive">Team-oriented & Motivated</li>
-                <li data-en="Stress Resilience" data-tr="Stres Dayanıklılığı">Stress Resilience</li>
-            </ul>
-        </div>
-
-        <div class="info-card">
-            <h3><span class="icon"></span> <span data-en="Languages" data-tr="Diller">Languages</span></h3>
-            <ul>
-                <li><strong>English</strong> - B2 (Upper-Intermediate)</li>
-                <li><strong>German</strong> - A1 (Beginner)</li>
-                <li><strong>French</strong> - A1 (Beginner)</li>
-                <li><strong>Turkish</strong> - Native</li>
-            </ul>
-        </div>
-
-        <div class="info-card">
-            <h3><span class="icon"></span> <span data-en="Education" data-tr="Eğitim">Education</span></h3>
-            <ul>
-                <li><strong>Istanbul Topkapı University</strong></li>
-                <li>B.Sc. in Management Information Systems</li>
-                <li>2023 - Expected 2027</li>
-                <li>Focus: AI & Data Analytics</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="stats">
-        <h3 data-en="Statistical Overview" data-tr="İstatistiksel Genel Bakış">Statistical Overview</h3>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">4+</div>
-                <div class="stat-label" data-en="Years of Study" data-tr="Yıl Eğitim">Years of Study</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">40</div>
-                <div class="stat-label" data-en="Hours Leadership Training" data-tr="Saat Liderlik Eğitimi">Hours Leadership Training</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">3+</div>
-                <div class="stat-label" data-en="Languages" data-tr="Dil">Languages</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4+</div>
-                <div class="stat-label" data-en="Years Volunteering" data-tr="Yıl Gönüllülük">Years Volunteering</div>
             </div>
         </div>
-    </div>
 
-    <div class="news-section" id="news">
-        <h3 data-en="Latest AI News & Publications" data-tr="Son Yapay Zeka Haberleri">Latest AI News & Publications</h3>
-        <div id="news-container" class="news-grid">
-            <div class="loading" data-en="Loading news..." data-tr="Haberler yükleniyor...">Loading news...</div>
+        <div class="about-me">
+            <h2 data-tr="✨ Hakkımda" data-en="✨ About Me">✨ Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-tr="Yönetim Bilişim Sistemleri alanında öğrenciyim. Web tasarımı, veri yapıları ve yönetim organizasyonu konularında uzmanlaşıyorum. Teknoloji ve iş dünyasını birleştiren projelerde çalışmayı seviyorum." 
+                       data-en="I'm a student in Management Information Systems. I'm specializing in web design, data structures, and management organization. I love working on projects that combine technology and business.">
+                       Yönetim Bilişim Sistemleri alanında öğrenciyim. Web tasarımı, veri yapıları ve yönetim organizasyonu konularında uzmanlaşıyorum. Teknoloji ve iş dünyasını birleştiren projelerde çalışmayı seviyorum.
+                    </p>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-emoji">🎓</span>
+                        <span class="stat-text" data-tr="Üniversite Öğrencisi" data-en="University Student">Üniversite Öğrencisi</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-emoji">💼</span>
+                        <span class="stat-text" data-tr="Finans Ekibi Lideri" data-en="Finance Team Lead">Finans Ekibi Lideri</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-emoji">🌟</span>
+                        <span class="stat-text" data-tr="Aspire Leaders Mezunu" data-en="Aspire Leaders Graduate">Aspire Leaders Mezunu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="interests">
+            <h2 data-tr="🎯 İlgi Alanlarım" data-en="🎯 My Interests">🎯 İlgi Alanlarım</h2>
+            <div class="interest-grid">
+                <div class="interest-card card-tech">
+                    <div class="card-icon">💻</div>
+                    <h3 data-tr="Teknoloji" data-en="Technology">Teknoloji</h3>
+                    <p data-tr="Web Tasarım, Veri Yapıları, MIS" data-en="Web Design, Data Structures, MIS">Web Tasarım, Veri Yapıları, MIS</p>
+                </div>
+                <div class="interest-card card-business">
+                    <div class="card-icon">📊</div>
+                    <h3 data-tr="İşletme" data-en="Business">İşletme</h3>
+                    <p data-tr="Yönetim, Organizasyon, Pazarlama" data-en="Management, Organization, Marketing">Yönetim, Organizasyon, Pazarlama</p>
+                </div>
+                <div class="interest-card card-art">
+                    <div class="card-icon">🎨</div>
+                    <h3 data-tr="Sanat" data-en="Art">Sanat</h3>
+                    <p data-tr="Grafik Tasarım, Dijital Sanat" data-en="Graphic Design, Digital Art">Grafik Tasarım, Dijital Sanat</p>
+                </div>
+                <div class="interest-card card-sports">
+                    <div class="card-icon">⚽</div>
+                    <h3 data-tr="Spor" data-en="Sports">Spor</h3>
+                    <p data-tr="Fitness, Yoga, Yürüyüş" data-en="Fitness, Yoga, Walking">Fitness, Yoga, Yürüyüş</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Highlight Section -->
+        <div class="skills-highlight">
+            <h2 data-tr="🚀 Yetenekler & Deneyim" data-en="🚀 Skills & Experience">🚀 Yetenekler & Deneyim</h2>
+            <div class="skills-showcase">
+                <div class="skill-box">
+                    <h4>Programming</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4 data-tr="İletişim" data-en="Communication">İletişim</h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tr="İngilizce B2" data-en="English B2">İngilizce B2</span>
+                        <span class="tag" data-tr="Almanca A1" data-en="German A1">Almanca A1</span>
+                        <span class="tag" data-tr="Fransızca A1" data-en="French A1">Fransızca A1</span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h4 data-tr="Liderlik" data-en="Leadership">Liderlik</h4>
+                    <div class="skill-tags">
+                        <span class="tag" data-tr="Takım Yönetimi" data-en="Team Management">Takım Yönetimi</span>
+                        <span class="tag" data-tr="Proje Yönetimi" data-en="Project Management">Proje Yönetimi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h2 data-tr="🔗 Bağlantılar" data-en="🔗 Links">🔗 Bağlantılar</h2>
+            <div class="social-links">
+                <a href="https://github.com/semanurdursun" target="_blank" class="social-btn social-github">
+                    <span class="social-icon">🔗</span>
+                    <span class="social-text">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="social-btn social-linkedin">
+                    <span class="social-icon">💼</span>
+                    <span class="social-text">LinkedIn</span>
+                </a>
+                <a href="cv.html" class="social-btn social-cv">
+                    <span class="social-icon">📄</span>
+                    <span class="social-text" data-tr="CV'mi Gör" data-en="View CV">CV'mi Gör</span>
+                </a>
+                <a href="contact.html" class="social-btn social-contact">
+                    <span class="social-icon">📧</span>
+                    <span class="social-text" data-tr="İletişim" data-en="Contact">İletişim</span>
+                </a>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Sema Nur Dursun. All rights reserved.</p>
-        <p data-en="Built with passion for AI and innovation 🚀" data-tr="Yapay zeka ve inovasyon tutkusuyla yapıldı 🚀">Built with passion for AI and innovation 🚀</p>
+        <p data-tr="© 2026 Semanur Dursun. Tüm hakları saklıdır." data-en="© 2026 Semanur Dursun. All rights reserved.">© 2026 Semanur Dursun. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="lang.js"></script>
-    <script>
-        // Load news from news.json
-        fetch('news.json')
-            .then(response => response.json())
-            .then(data => {
-                const newsContainer = document.getElementById('news-container');
-                newsContainer.innerHTML = '';
-                
-                data.news.forEach(item => {
-                    const newsCard = document.createElement('div');
-                    newsCard.className = 'news-card';
-                    newsCard.innerHTML = `
-                        <h4>${currentLang === 'en' ? item.title_en : item.title_tr}</h4>
-                        <p class="news-date">${item.date}</p>
-                        <p>${currentLang === 'en' ? item.description_en : item.description_tr}</p>
-                        <a href="${item.link}" target="_blank" class="news-link" data-en="Read more →" data-tr="Devamını oku →">Read more →</a>
-                    `;
-                    newsContainer.appendChild(newsCard);
-                });
-            })
-            .catch(error => {
-                console.error('Error loading news:', error);
-                document.getElementById('news-container').innerHTML = '<p>Unable to load news.</p>';
-            });
-
-        function scrollToNews() {
-            document.getElementById('news').scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
-     
 
      
      
