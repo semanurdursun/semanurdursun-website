@@ -26,6 +26,9 @@ function toggleLanguage() {
     if (typeof loadNews === 'function') {
         loadNews();
     }
+    
+    // Trigger custom event for news page
+    window.dispatchEvent(new Event('languageChanged'));
 }
 
 function updateNavigationMenu() {
@@ -40,6 +43,8 @@ function updateNavigationMenu() {
             item.textContent = currentLang === 'tr' ? 'Özgeçmiş' : 'CV';
         } else if (href === 'timeline.html') {
             item.textContent = currentLang === 'tr' ? 'Zaman Çizelgesi' : 'Timeline';
+        } else if (href === 'news.html') {
+            item.textContent = currentLang === 'tr' ? 'Haberler' : 'News';
         } else if (href === 'contact.html') {
             item.textContent = currentLang === 'tr' ? 'İletişim' : 'Contact';
         }
