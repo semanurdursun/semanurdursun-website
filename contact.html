@@ -1,259 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Sema Nur Dursun</title>
+    <title>Semanur Dursun - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/NOREY LOGO.png" alt="Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                <div class="logo-circle" style="display:none;">SN</div>
-                <span>Sema Nur Dursun</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="timeline.html">Schedule</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="index.html#news">News</a></li>
-                </ul>
-            </nav>
-            <div class="lang-switch" onclick="toggleLanguage()">🌐 <span id="lang-display">EN</span></div>
+            <div class="logo">
+                <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><button id="langToggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1 data-en="Get In Touch" data-tr="İletişime Geçin">Get In Touch</h1>
-            <p data-en="I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out." data-tr="Sizden haber almak isterim! Bir sorunuz varsa, işbirliği yapmak istiyorsanız veya sadece merhaba demek istiyorsanız, lütfen iletişime geçin.">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p>
+    <div class="hero-section">
+        <div class="hero-content">
+            <img src="assets/NOREY LOGO.png" alt="Profile Logo" class="hero-logo">
+            <h1 data-tr="İletişime Geç" data-en="Get In Touch">İletişime Geç</h1>
+            <p data-tr="Benimle iletişime geçmek için formu doldurun!" data-en="Fill out the form to get in touch with me!">Benimle iletişime geçmek için formu doldurun!</p>
         </div>
+    </div>
 
-        <div class="contact-content">
-            <div class="contact-form-section">
-                <h2 data-en="📧 Send me a message" data-tr="📧 Bana mesaj gönderin">📧 Send me a message</h2>
-                
-                <div class="form-container" id="contactForm">
-                    <div class="form-group">
-                        <label for="name" data-en="Your Name *" data-tr="Adınız *">Your Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email" data-en="Your Email *" data-tr="E-postanız *">Your Email *</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject" data-en="Subject *" data-tr="Konu *">Subject *</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message" data-en="Message *" data-tr="Mesajınız *">Message *</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
-                    </div>
-
-                    <div class="form-group checkbox-group">
-                        <h4 data-en="I'm interested in:" data-tr="İlgilendiğim konular:">I'm interested in:</h4>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interest" value="collaboration">
-                            <span data-en="Collaboration Opportunities" data-tr="İşbirliği Fırsatları">Collaboration Opportunities</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interest" value="projects">
-                            <span data-en="Project Discussions" data-tr="Proje Görüşmeleri">Project Discussions</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interest" value="networking">
-                            <span data-en="Professional Networking" data-tr="Profesyonel Ağ Oluşturma">Professional Networking</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interest" value="mentorship">
-                            <span data-en="Mentorship" data-tr="Mentorluk">Mentorship</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interest" value="other">
-                            <span data-en="Other" data-tr="Diğer">Other</span>
-                        </label>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="checkbox-label required-checkbox">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <span data-en="I agree to the privacy policy and understand that my data will be processed. *" data-tr="Gizlilik politikasını kabul ediyorum ve verilerimin işleneceğini anlıyorum. *">I agree to the privacy policy and understand that my data will be processed. *</span>
-                        </label>
-                    </div>
-
-                    <div class="spam-protection">
-                        <label for="honeypot" style="display:none;">Leave this field empty</label>
-                        <input type="text" id="honeypot" name="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
-                        
-                        <div class="captcha-box">
-                            <label class="checkbox-label">
-                                <input type="checkbox" id="captcha" name="captcha" required>
-                                <span data-en="I'm not a robot 🤖" data-tr="Robot değilim 🤖">I'm not a robot 🤖</span>
-                            </label>
-                            <div class="spam-shield" data-en="🔒 Spam Protection Active" data-tr="🔒 Spam Koruması Aktif">🔒 Spam Protection Active</div>
+    <div class="content-section">
+        <div class="contact-container">
+            <div class="contact-info-section">
+                <h2 data-tr="📞 İletişim Bilgileri" data-en="📞 Contact Information">📞 İletişim Bilgileri</h2>
+                <div class="contact-info-card">
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>dursunnurstudent@gmail.com</p>
                         </div>
                     </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <h4 data-tr="Telefon" data-en="Phone">Telefon</h4>
+                            <p>+90 555 038 22 47</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4 data-tr="Konum" data-en="Location">Konum</h4>
+                            <p>Üsküdar, Istanbul, Turkey</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🔗</span>
+                        <div>
+                            <h4 data-tr="Sosyal Medya" data-en="Social Media">Sosyal Medya</h4>
+                            <p>
+                                <a href="https://github.com/semanurdursun" target="_blank">GitHub</a> | 
+                                <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                    <button type="submit" class="submit-btn" onclick="handleSubmit(event)">
-                        <span data-en="Send Message" data-tr="Mesaj Gönder">Send Message</span> ✉️
-                    </button>
-
-                    <div id="formMessage" class="form-message"></div>
+                <!-- Google Maps Iframe -->
+                <div class="map-container">
+                    <h3 data-tr="📍 Konumumuz" data-en="📍 Our Location">📍 Konumumuz</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d28.97953!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac82d4e8c7337%3A0x5f1b9f8d1b1b1b1b!2s%C3%9Csk%C3%BCdar%2C%20Istanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
                 </div>
             </div>
 
-            <div class="contact-info-section">
-                <h2 data-en="📍 Contact Information" data-tr="📍 İletişim Bilgileri">📍 Contact Information</h2>
+            <div class="form-container">
+                <h2 data-tr="✉️ Mesaj Gönder" data-en="✉️ Send Message">✉️ Mesaj Gönder</h2>
                 
-                <div class="info-cards">
-                    <div class="contact-info-card">
-                        <div class="info-icon">📧</div>
-                        <h3 data-en="Email" data-tr="E-posta">Email</h3>
-                        <p><a href="mailto:dursunnurstudent@gmail.com">dursunnurstudent@gmail.com</a></p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="info-icon">📱</div>
-                        <h3 data-en="Phone" data-tr="Telefon">Phone</h3>
-                        <p><a href="tel:+905550382247">+90 555 038 22 47</a></p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="info-icon">📍</div>
-                        <h3 data-en="Location" data-tr="Konum">Location</h3>
-                        <p>Istanbul, Turkey</p>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="info-icon">🎓</div>
-                        <h3 data-en="University" data-tr="Üniversite">University</h3>
-                        <p>Istanbul Topkapı University</p>
-                    </div>
+                <!-- Spam Protection -->
+                <div class="spam-protection">
+                    <p data-tr="🛡️ Bu form spam korumalıdır" data-en="🛡️ This form is spam protected">🛡️ Bu form spam korumalıdır</p>
                 </div>
 
-                <div class="map-section">
-                    <h3 data-en="🗺️ Find Me" data-tr="🗺️ Beni Bulun">🗺️ Find Me</h3>
-                    <div class="iframe-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894612!2d28.68252654460452!3d41.00537174230819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890123!5m2!1sen!2str" 
-                            width="100%" 
-                            height="300" 
-                            style="border:0; border-radius: 15px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                <form id="contactForm" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <label for="name" data-tr="Ad Soyad *" data-en="Full Name *">Ad Soyad *</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
 
-                <div class="additional-iframe">
-                    <h3 data-en="🌟 My University" data-tr="🌟 Üniversitem">🌟 My University</h3>
-                    <div class="iframe-container">
-                        <iframe 
-                            src="https://www.topkapi.edu.tr/" 
-                            width="100%" 
-                            height="300" 
-                            style="border:0; border-radius: 15px;" 
-                            loading="lazy">
-                        </iframe>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-tr="Telefon" data-en="Phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-tr="Konu *" data-en="Subject *">Konu *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-tr="İlgi Alanlarınız" data-en="Your Interests">İlgi Alanlarınız</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="tech" name="interests" value="technology">
+                                <label for="tech" data-tr="Teknoloji ve Yazılım" data-en="Technology & Software">Teknoloji ve Yazılım</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="business" name="interests" value="business">
+                                <label for="business" data-tr="İşletme ve Yönetim" data-en="Business & Management">İşletme ve Yönetim</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="design" name="interests" value="design">
+                                <label for="design" data-tr="Tasarım ve Sanat" data-en="Design & Art">Tasarım ve Sanat</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="volunteer" name="interests" value="volunteer">
+                                <label for="volunteer" data-tr="Gönüllülük Projeleri" data-en="Volunteer Projects">Gönüllülük Projeleri</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="ai" name="interests" value="ai">
+                                <label for="ai" data-tr="Yapay Zeka ve Veri Bilimi" data-en="AI & Data Science">Yapay Zeka ve Veri Bilimi</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="other" name="interests" value="other">
+                                <label for="other" data-tr="Diğer" data-en="Other">Diğer</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-tr="Mesajınız *" data-en="Your Message *">Mesajınız *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <!-- Honeypot for spam protection -->
+                    <input type="text" name="honeypot" style="display: none;">
+
+                    <div class="form-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy" data-tr="Kişisel verilerimin işlenmesini kabul ediyorum *" 
+                                   data-en="I accept the processing of my personal data *">
+                                   Kişisel verilerimin işlenmesini kabul ediyorum *
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" data-tr="Mesajı Gönder" data-en="Send Message">Mesajı Gönder</button>
+                </form>
+
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="statistics-section">
+            <h2 data-tr="📊 İstatistikler" data-en="📊 Statistics">📊 İstatistikler</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label" data-tr="Yıllık Deneyim" data-en="Years Experience">Yıllık Deneyim</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label" data-tr="Tamamlanan Proje" data-en="Projects Completed">Tamamlanan Proje</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label" data-tr="Sertifika" data-en="Certificates">Sertifika</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label" data-tr="Dil Bilgisi" data-en="Languages">Dil Bilgisi</div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Sema Nur Dursun. All rights reserved.</p>
-        <p data-en="Built with passion for AI and innovation 🚀" data-tr="Yapay zeka ve inovasyon tutkusuyla yapıldı 🚀">Built with passion for AI and innovation 🚀</p>
+        <p data-tr="© 2026 Semanur Dursun. Tüm hakları saklıdır." data-en="© 2026 Semanur Dursun. All rights reserved.">© 2026 Semanur Dursun. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="lang.js"></script>
     <script>
-        function handleSubmit(event) {
+        function sendEmail(event) {
             event.preventDefault();
             
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            const honeypot = document.getElementById('honeypot').value;
-            const captcha = document.getElementById('captcha').checked;
-            const privacy = document.getElementById('privacy').checked;
-            
-            // Spam protection - honeypot
-            if (honeypot !== '') {
-                alert('Spam detected!');
+            // Spam protection - check honeypot
+            if (document.querySelector('input[name="honeypot"]').value !== '') {
                 return false;
             }
             
-            // Validate captcha
-            if (!captcha) {
-                showMessage('Please confirm you are not a robot.', 'error');
-                return false;
-            }
+            // Get form data
+            const form = document.getElementById('contactForm');
+            const formData = new FormData(form);
             
-            // Validate privacy
-            if (!privacy) {
-                showMessage('Please accept the privacy policy.', 'error');
-                return false;
-            }
+            // Get checked interests
+            const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
+                .map(cb => cb.nextElementSibling.textContent)
+                .join(', ');
             
-            // Validate fields
-            if (!name || !email || !subject || !message) {
-                showMessage('Please fill all required fields.', 'error');
-                return false;
-            }
+            // Prepare email content
+            const emailData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone') || 'Belirtilmedi',
+                subject: formData.get('subject'),
+                interests: interests || 'Belirtilmedi',
+                message: formData.get('message')
+            };
             
-            // Get selected interests
-            const interests = [];
-            document.querySelectorAll('input[name="interest"]:checked').forEach(checkbox => {
-                interests.push(checkbox.value);
-            });
+            // Create mailto link
+            const mailtoLink = `mailto:dursunnurstudent@gmail.com?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(
+                `İsim: ${emailData.name}\n` +
+                `Email: ${emailData.email}\n` +
+                `Telefon: ${emailData.phone}\n` +
+                `İlgi Alanları: ${emailData.interests}\n\n` +
+                `Mesaj:\n${emailData.message}`
+            )}`;
             
-            // Create email body
-            const emailBody = `
-Name: ${name}
-Email: ${email}
-Subject: ${subject}
-
-Interests: ${interests.join(', ') || 'None selected'}
-
-Message:
-${message}
-            `;
-            
-            // Send email using mailto (opens email client)
-            const mailtoLink = `mailto:dursunnurstudent@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+            // Open email client
             window.location.href = mailtoLink;
             
-            showMessage('Opening your email client... Please send the email to complete your message.', 'success');
+            // Show success message
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.style.display = 'block';
+            messageDiv.style.background = 'linear-gradient(135deg, var(--pastel-green), var(--pastel-yellow))';
+            messageDiv.style.padding = '1rem';
+            messageDiv.style.borderRadius = '10px';
+            messageDiv.style.marginTop = '1rem';
+            messageDiv.textContent = document.documentElement.lang === 'tr' 
+                ? '✅ Mesajınız hazırlandı! E-posta istemciniz açılacak.'
+                : '✅ Your message is ready! Your email client will open.';
             
-            
+            // Reset form after delay
             setTimeout(() => {
-                document.getElementById('contactForm').reset();
-            }, 2000);
+                form.reset();
+                messageDiv.style.display = 'none';
+            }, 3000);
             
             return false;
-        }
-        
-        function showMessage(message, type) {
-            const messageDiv = document.getElementById('formMessage');
-            messageDiv.textContent = message;
-            messageDiv.className = `form-message ${type}`;
-            messageDiv.style.display = 'block';
-            
-            setTimeout(() => {
-                messageDiv.style.display = 'none';
-            }, 5000);
         }
     </script>
 </body>
 </html>
+
+      
