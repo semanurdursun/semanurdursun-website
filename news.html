@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semanur Dursun - News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/NOREY LOGO.png" alt="NOREY Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="cv.html">Özgeçmiş</a></li>
+                <li><a href="timeline.html">Zaman Çizelgesi</a></li>
+                <li><a href="news.html" class="active">Haberler</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><button id="langToggle" onclick="toggleLanguage()">EN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <img src="assets/NOREY LOGO.png" alt="Profile Logo" class="hero-logo">
+            <h1 data-tr="📰 Haberler & Yayınlar" data-en="📰 News & Publications">📰 Haberler & Yayınlar</h1>
+            <p data-tr="Teknoloji, yapay zeka ve dijital dönüşüm üzerine güncel içerikler" 
+               data-en="Latest content on technology, AI and digital transformation">
+               Teknoloji, yapay zeka ve dijital dönüşüm üzerine güncel içerikler
+            </p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="news-full-section">
+            <div id="newsContainer" class="news-grid">
+                <!-- News will be loaded dynamically from news.json -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p data-tr="© 2026 Semanur Dursun. Tüm hakları saklıdır." data-en="© 2026 Semanur Dursun. All rights reserved.">© 2026 Semanur Dursun. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script>
+        let currentLang = document.documentElement.lang || 'tr';
+        let allNews = [];
+
+        // Load news from JSON file
+        async function loadNews() {
+            try {
+                const response = await fetch('news.json');
+                const data = await response.json();
+                allNews = data.news;
+                displayNews();
+            } catch (error) {
+                console.error('News loading error:', error);
+            }
+        }
+
+        function displayNews() {
+            const newsContainer = document.getElementById('newsContainer');
+            const lang = document.documentElement.lang || 'tr';
+            
+            newsContainer.innerHTML = allNews.map(item => `
+                <div class="news-card" onclick="openNewsDetail('${item.id}')">
+                    <div class="news-date">${lang === 'tr' ? item.date_tr : item.date_en}</div>
+                    <h3>${lang === 'tr' ? item.title_tr : item.title_en}</h3>
+                    <p>${lang === 'tr' ? item.description_tr : item.description_en}</p>
+                    <a href="#" class="news-link" onclick="event.stopPropagation(); openNewsDetail('${item.id}'); return false;">
+                        ${lang === 'tr' ? 'Devamını Oku →' : 'Read More →'}
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function openNewsDetail(newsId) {
+            const newsItem = allNews.find(item => item.id === newsId);
+            if (!newsItem) return;
+
+            const lang = document.documentElement.lang || 'tr';
+            
+            // Create modal overlay
+            const modal = document.createElement('div');
+            modal.className = 'news-modal';
+            modal.innerHTML = `
+                <div class="news-modal-content">
+                    <button class="modal-close" onclick="closeNewsModal()">&times;</button>
+                    <div class="modal-header">
+                        <div class="news-date">${lang === 'tr' ? newsItem.date_tr : newsItem.date_en}</div>
+                        <h2>${lang === 'tr' ? newsItem.title_tr : newsItem.title_en}</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>${lang === 'tr' ? newsItem.content_tr : newsItem.content_en}</p>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            setTimeout(() => modal.classList.add('active'), 10);
+        }
+
+        function closeNewsModal() {
+            const modal = document.querySelector('.news-modal');
+            if (modal) {
+                modal.classList.remove('active');
+                setTimeout(() => modal.remove(), 300);
+            }
+        }
+
+        // Close modal on outside click
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('news-modal')) {
+                closeNewsModal();
+            }
+        });
+
+        // Load news on page load
+        window.addEventListener('DOMContentLoaded', loadNews);
+
+        // Reload news when language changes
+        window.addEventListener('languageChanged', displayNews);
+    </script>
+</body>
+</html>
