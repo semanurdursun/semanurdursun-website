@@ -1,63 +1,83 @@
-
-let currentLang = 'tr'; // Default language is Turkish
-
-function toggleLanguage() {
-    currentLang = currentLang === 'tr' ? 'en' : 'tr';
-    document.documentElement.lang = currentLang;
+// Language System with Local Storage
+const languageSystem = {
+    currentLang: localStorage.getItem('selectedLanguage') || 'tr',
     
-    // Update button text
-    const langButton = document.getElementById('langToggle');
-    langButton.textContent = currentLang === 'tr' ? 'EN' : 'TR';
+    init() {
+        this.setLanguage(this.currentLang);
+        this.createLanguageButtons();
+        this.updateButtonStates();
+    },
     
-    // Update all elements with data-tr and data-en attributes
-    const elements = document.querySelectorAll('[data-tr][data-en]');
-    elements.forEach(element => {
-        if (currentLang === 'tr') {
-            element.textContent = element.getAttribute('data-tr');
-        } else {
-            element.textContent = element.getAttribute('data-en');
-        }
-    });
-    
-    // Update navigation menu items
-    updateNavigationMenu();
-    
-    // Reload news if on timeline page
-    if (typeof loadNews === 'function') {
-        loadNews();
-    }
-    
-    // Trigger custom event for news page
-    window.dispatchEvent(new Event('languageChanged'));
-}
-
-function updateNavigationMenu() {
-    const navItems = document.querySelectorAll('.nav-menu a');
-    
-    navItems.forEach(item => {
-        const href = item.getAttribute('href');
+    createLanguageButtons() {
+        const navMenu = document.querySelector('.nav-menu');
+        if (!navMenu) return;
         
-        if (href === 'index.html') {
-            item.textContent = currentLang === 'tr' ? 'Ana Sayfa' : 'Home';
-        } else if (href === 'cv.html') {
-            item.textContent = currentLang === 'tr' ? 'Özgeçmiş' : 'CV';
-        } else if (href === 'timeline.html') {
-            item.textContent = currentLang === 'tr' ? 'Zaman Çizelgesi' : 'Timeline';
-        } else if (href === 'news.html') {
-            item.textContent = currentLang === 'tr' ? 'Haberler' : 'News';
-        } else if (href === 'contact.html') {
-            item.textContent = currentLang === 'tr' ? 'İletişim' : 'Contact';
+        // Remove old language toggle if exists
+        const oldToggle = document.getElementById('langToggle');
+        if (oldToggle) {
+            oldToggle.parentElement.remove();
         }
-    });
-}
-
-// Initialize language on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const langButton = document.getElementById('langToggle');
-    if (langButton) {
-        langButton.textContent = 'EN';
-    }
+        
+        // Create TR button
+        const trButton = document.createElement('li');
+        trButton.innerHTML = '<button class="lang-btn" data-lang="tr">TR</button>';
+        navMenu.appendChild(trButton);
+        
+        // Create EN button
+        const enButton = document.createElement('li');
+        enButton.innerHTML = '<button class="lang-btn" data-lang="en">EN</button>';
+        navMenu.appendChild(enButton);
+        
+        // Add click events
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                this.setLanguage(lang);
+            });
+        });
+    },
     
-    // Set initial navigation menu text
-    updateNavigationMenu();
+    setLanguage(lang) {
+        this.currentLang = lang;
+        localStorage.setItem('selectedLanguage', lang);
+        document.documentElement.lang = lang;
+        
+        // Update all elements with data-tr and data-en attributes
+        document.querySelectorAll('[data-tr][data-en]').forEach(element => {
+            if (lang === 'tr') {
+                element.textContent = element.getAttribute('data-tr');
+            } else {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+        
+        this.updateButtonStates();
+        
+        // Reload news if on news page
+        if (typeof loadNews === 'function') {
+            loadNews();
+        }
+    },
+    
+    updateButtonStates() {
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            const btnLang = btn.getAttribute('data-lang');
+            if (btnLang === this.currentLang) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+};
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    languageSystem.init();
 });
+
+// Legacy function for backwards compatibility
+function toggleLanguage() {
+    const newLang = languageSystem.currentLang === 'tr' ? 'en' : 'tr';
+    languageSystem.setLanguage(newLang);
+}
