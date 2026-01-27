@@ -40,9 +40,14 @@ body {
     padding: 0 2rem;
 }
 
+.logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
 .logo img {
-    height: 50px;
-    width: auto;
+    max-width: 200px;
+    height: auto;
 }
 
 .nav-menu {
