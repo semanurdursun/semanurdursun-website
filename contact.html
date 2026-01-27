@@ -10,7 +10,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <img src="assets/snd-logo.png"
+                <img src="assets/logo.png" alt="SND Logo" style="height: 60px; width: auto;">
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Ana Sayfa</a></li>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <!-- Google Maps Iframe -->
+                
                 <div class="map-container">
                     <h3 data-tr="📍 Konumumuz" data-en="📍 Our Location">📍 Konumumuz</h3>
                     <iframe 
@@ -86,7 +86,7 @@
             <div class="form-container">
                 <h2 data-tr="✉️ Mesaj Gönder" data-en="✉️ Send Message">✉️ Mesaj Gönder</h2>
                 
-                <!-- Spam Protection -->
+            
                 <div class="spam-protection">
                     <p data-tr="🛡️ Bu form spam korumalıdır" data-en="🛡️ This form is spam protected">🛡️ Bu form spam korumalıdır</p>
                 </div>
@@ -147,7 +147,6 @@
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
 
-                    <!-- Honeypot for spam protection -->
                     <input type="text" name="honeypot" style="display: none;">
 
                     <div class="form-group">
@@ -167,7 +166,7 @@
             </div>
         </div>
 
-        <!-- Statistics Section -->
+       
         <div class="statistics-section">
             <h2 data-tr="📊 İstatistikler" data-en="📊 Statistics">📊 İstatistikler</h2>
             <div class="stats-grid">
@@ -200,21 +199,20 @@
         function sendEmail(event) {
             event.preventDefault();
             
-            // Spam protection - check honeypot
+          
             if (document.querySelector('input[name="honeypot"]').value !== '') {
                 return false;
             }
             
-            // Get form data
+     
             const form = document.getElementById('contactForm');
             const formData = new FormData(form);
             
-            // Get checked interests
+           
             const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked'))
                 .map(cb => cb.nextElementSibling.textContent)
                 .join(', ');
             
-            // Prepare email content
             const emailData = {
                 name: formData.get('name'),
                 email: formData.get('email'),
