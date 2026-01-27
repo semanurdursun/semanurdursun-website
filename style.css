@@ -1033,3 +1033,36 @@ footer {
 .news-card {
     cursor: pointer;
 }
+/* Language Buttons Styling - Add this to your style.css */
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--pastel-purple, #a78bfa);
+    color: var(--pastel-purple, #a78bfa);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+.lang-btn:hover {
+    background: var(--pastel-purple, #a78bfa);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(167, 139, 250, 0.3);
+}
+
+.lang-btn.active {
+    background: var(--pastel-purple, #a78bfa);
+    color: white;
+    box-shadow: 0 4px 12px rgba(167, 139, 250, 0.4);
+}
+
+/* Make language buttons inline */
+.nav-menu li:has(.lang-btn) {
+    display: inline-block;
+    margin-left: 5px;
+}
